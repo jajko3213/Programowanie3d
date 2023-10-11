@@ -9,7 +9,7 @@ int main()
 	std::cout << "Nazywam sie Dawid.\n";
 	std::cout << 'X';
 	std::cout << "\n";
-	std::cout << '\n'; //Tylko dla jednego znaku lub znaku specjalnego np.'X', '\n'
+	std::cout << '\n'; // Tylko dla jednego znaku lub znaku specjalnego np.'X', '\n'
 	std::cout << 56 << "\n"; 
 	std::cout << 12.5 << "\n";
 }
