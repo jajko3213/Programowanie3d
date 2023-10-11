@@ -7,6 +7,11 @@ int main()
 {
 	std::cout << "Hello World!";
 	std::cout << "Nazywam sie Dawid.\n";
+	std::cout << 'X';
+	std::cout << "\n";
+	std::cout << '\n'; //Tylko dla jednego znaku lub znaku specjalnego np.'X', '\n'
+	std::cout << 56 << "\n"; 
+	std::cout << 12.5 << "\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
