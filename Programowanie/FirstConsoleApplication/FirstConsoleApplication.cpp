@@ -10,8 +10,8 @@ int main()
 	std::cout << 'X';
 	std::cout << "\n";
 	std::cout << '\n'; // Tylko dla jednego znaku lub znaku specjalnego np.'X', '\n'
-	std::cout << 56 << "\n"; 
-	std::cout << 12.5 << "\n";
+	std::cout << 56 << "\n"; //Sta³a liczbowa ca³kowita 
+	std::cout << 12.5 << "\n"; //Sta³a liczbowa rzeczywista
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
