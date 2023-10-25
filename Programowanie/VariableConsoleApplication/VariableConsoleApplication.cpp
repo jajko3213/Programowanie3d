@@ -10,17 +10,24 @@ void task1()
 	std::cout << "Masz " << ageFromUser << " lat.\n";
 }
 
-//Stwórz program, który pobiera od u¿ytkownika d³ugoœæ w metrach i przelicza j¹na centymetry, milimetry i kilometry. Wyœwitetl wynik.
+//Stwórz program, który pobiera od u¿ytkownika d³ugoœæ w metrach i przelicza j¹ na centymetry, milimetry i kilometry. Wyœwitetl wynik.
 void task2()
 {
 	float  lenghtInMeterFromUser;
 	std::cout << "Podaj d³ugoœæ w metrach: ";
-	std::cin >> lenghtInMeterFromUser;
+	std::cin >> lenghtInMeterFromUser"\n";
 
 	float lenghtInCentimiter;
 	lenghtInCentimiter = lenghtInMeterFromUser / 100;
-	std::cout << "D³ugoœæ w centymetrach wynosi: " << lenghtInCentimiter;
+	std::cout << "D³ugoœæ w centymetrach wynosi: " << lenghtInCentimiter"\n";
 
+	float lenghtInMilimiter;
+	lenghtInMilimiter = lenghtInMeterFromUser / 1000;
+	std::cout << "D³ugoœæ w milimetrach wynosi: " << lenghtInMilimiter"\n";
+
+	float lenghtInKilometer;
+	lenghtInKilometer = lenghtInMeterFromUser / 1000;
+	std::cout << "D³ugoœæ w kilometrach wynosi: " << lenghtInKilometer"\n";
 }
 
 
