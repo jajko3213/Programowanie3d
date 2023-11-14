@@ -1,42 +1,10 @@
 #include <iostream>
 
-/*
-* 
-
-* 
-
-* 
-
-* Napisz program, który poprosi u¿ytkownika o podanie d³ugoœci podstawy a, podstawy b i wysokoœci h trapezu, a nastêpnie obliczy pole tego trapezu, wyœwietlaj¹c wynik.
-
-* Napisz program, który poprosi u¿ytkownika o podanie d³ugoœci krawêdzi szeœcianu i obliczy jego objêtoœæ, wyœwietlaj¹c wynik.
-
-* Napisz program, który poprosi u¿ytkownika o podanie temperatury w stopniach Celsiusza, a nastêpnie przeliczy j¹ na stopnie Fahrenheita i wyœwietli wynik.
-
-* Napisz program, który konwertuje wprowadzon¹ kwotê w jednej walucie na inn¹, korzystaj¹c z okreœlonego kursu wymiany.
-
-* Napisz program, który poprosi u¿ytkownika o podanie dwóch liczb (a, b) i obliczy œredni¹ arytmetyczn¹ tych liczb. Nastêpnie wyœwietli wynik.
-
-* Napisz program, który poprosi u¿ytkownika o podanie trzech liczb (a, b, c) i obliczy œredni¹ arytmetyczn¹ tych liczb. Nastêpnie wyœwietli wynik.
-
-* Program obliczaj¹cy œredni¹ wa¿on¹ trzech liczb z podanymi odpowiednimi wagami w1, w2 i w3.
-
-* Napisz program, który poprosi u¿ytkownika o podanie dwóch liczb ca³kowitych. Nastêpnie wykona operacje (+, -, *, /) i wyœwietli wyniki.
-
-* Napisz program, który poprosi u¿ytkownika o podanie liczby sekund i przeliczy je na godziny i minuty, wyœwietlaj¹c wynik.
-
-* Napisz program, który poprosi u¿ytkownika o podanie wspó³rzêdnych (x1, y1) i (x2, y2) dwóch punktów w uk³adzie kartezjañskim, a nastêpnie obliczy odleg³oœæ miêdzy nimi, wyœwietlaj¹c wynik.
-
-*/
-
-
-
-
-
 //Napisz program, który wczyta od u¿ytkownika jego wiek a nastêpnie wyœwietli go na konsoli
 void task1()
 {
 	short ageFromUser;
+	
 	std::cout << "Podaj swoj wiek: ";
 	std::cin >> ageFromUser;
 
@@ -47,6 +15,7 @@ void task1()
 void task2()
 {
 	float  lenghtInMeterFromUser;
+	
 	std::cout << "Podaj dlugosc w metrach: ";
 	std::cin >> lenghtInMeterFromUser;
 
@@ -69,45 +38,216 @@ void task2()
 //Napisz program, który poprosi u¿ytkownika o podanie d³ugoœci boku a i b prostok¹ta, a nastêpnie obliczy i wyœwietli pole prostok¹ta.
 void task3()
 {
-	float sideLengthA, sideLenghtB,field;
-	std::cout << "Program oblicza pole prostok¹ta" << "\n";
+	float sideLengthA, sideLenghtB, area;
 	
+	std::cout << "Program oblicza pole prostok¹ta" << "\n";
 	std::cout << "Podaj d³ugoœæ boku a: " << "\n";
 	std::cin >> sideLengthA;
 	std::cout << "Podaj d³ugoœæ boku b: " << "\n";
 	std::cin >> sideLenghtB;
 	std::cout << "\n";
-	field = sideLengthA * sideLenghtB;
 
-	std::cout << "Pole tego prostok¹ta wynosi: " << field << "\n";
+	area = sideLengthA * sideLenghtB;
+
+	std::cout << "Pole tego prostok¹ta wynosi: " << area << "\n";
 }
 
 //Napisz program, który poprosi u¿ytkownika o podanie d³ugoœci podstawy i wysokoœci trójk¹ta, a nastêpnie obliczy pole tego trójk¹ta, wyœwietlaj¹c wynik.
 void task4()
 {
-	float sideLengthA, sideLenghtH, field;
-	
+	float sideLengthA, sideLenghtH, area;
+
 	std::cout << "Program oblicza pole trójk¹ta" << "\n";
 	std::cout << "Podaj d³ugoœæ boku a: " << "\n";
 	std::cin >> sideLengthA;
 	std::cout << "Podaj d³ugoœæ boku h: " << "\n";
 	std::cin >> sideLenghtH;
-	
-	field = sideLengthA * sideLenghtH / 2;
-    std:: cout << "\n";
-	std::cout << "Pole tego trójk¹ta wynosi: " << field;
+
+	area = sideLengthA * sideLenghtH / 2;
+
+	std::cout << "\n";
+	std::cout << "Pole tego trójk¹ta wynosi: " << area;
 }
 
 //Napisz program, który poprosi u¿ytkownika o podanie promienia ko³a i obliczy pole tego ko³a, wyœwietlaj¹c wynik.
 void task5()
 {
-	float field, pi_number = 3,14 , radius_from_user;
+	float area, pi_number = 3.14, radius_from_user;
+	
 	std::cout << "Program oblicza pole powierzchni ko³a" << "\n";
 	std::cout << "Podaj d³ugoœæ promienia: " << "\n";
-	field = pi_number;
+	std::cin >> radius_from_user;
+
+	area = pi_number * radius_from_user;
+
+	std::cout << "Pole tego ko³a wynosi: " << area << "\n";
 }
 
 
+//Napisz program, który poprosi u¿ytkownika o podanie d³ugoœci podstawy a, podstawy b i wysokoœci h trapezu, a nastêpnie obliczy pole tego trapezu, wyœwietlaj¹c wynik.
+void task6()
+{
+	float sideLengthA, sideLengthB, sideLengthH, area;
+
+	std::cout << "Program oblicza pole powierzchni trapezu";
+	std::cout << "Podaj d³ugoœæ podstawy a: " << "\n";
+	std::cin >> sideLengthA;
+	std::cout << "Podaj d³ugoœæ podstawy b: " << "\n";
+	std::cin >> sideLengthB;
+	std::cout << "Podaj d³ugoœæ podstawy h: " << "\n";
+	std::cin >> sideLengthH;
+
+	area = (sideLengthA + sideLengthB) * sideLengthH / 2;
+
+	std::cout << "Pole tego trapezu wynosi: " << area << "\n";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie d³ugoœci krawêdzi szeœcianu i obliczy jego objêtoœæ, wyœwietlaj¹c wynik.
+void task7()
+{
+	float sideOfTheCubeFromUser, volume;
+	
+	std::cout << "Program oblicza objêtoœæ szesæianu" << "\n";
+	std::cout << "Podaj krawêdŸ szeœcianu: " << "\n";
+	std::cin >> sideOfTheCubeFromUser;
+
+	volume = sideOfTheCubeFromUser * sideOfTheCubeFromUser * sideOfTheCubeFromUser;
+
+	std::cout << "Objêtoœæ tego szeœcianu wynosi: " << volume << "\n";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie temperatury w stopniach Celsiusza, a nastêpnie przeliczy j¹ na stopnie Fahrenheita i wyœwietli wynik.
+void task8()
+{
+	float degreesCelciusFromUser, degreesFarenheit;
+	
+	std::cout << "Program przelicza temperature ze stopni Celcjusza na stopnie Farenheita" << "\n";
+	std::cout << "Podaj temperature w stopniah celcjusza: " << "\n";
+	std::cin >> degreesCelciusFromUser;
+
+	degreesFarenheit = 1.8 * degreesCelciusFromUser + 32;
+
+	std::cout << "Temperatura w stopniach Farenheit wynosi: " << degreesFarenheit << "\n";
+}
+
+//Napisz program, który konwertuje wprowadzon¹ kwotê w jednej walucie na inn¹, korzystaj¹c z okreœlonego kursu wymiany.
+void task9()
+{
+	float amountInPln, amountInEuroFromUser;
+
+	std::cout << "Program konwertuje kwotê w euro na z³otówki" << "\n";
+	std::cout << "Podaj kwote w euro: " << "\n";
+	std::cin >> amountInEuroFromUser;
+
+	amountInPln = amountInEuroFromUser * 4.42;
+
+	std::cout << "Kwota w z³otówkach wynosi: " << amountInPln << "\n";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie dwóch liczb (a, b) i obliczy œredni¹ arytmetyczn¹ tych liczb. Nastêpnie wyœwietli wynik.
+void task10()
+{
+	float variableA, variableB, arithmeticAverage;
+	
+	std::cout << "Program wylicza œredni¹ arytmetyczn¹ dwóch liczb" << "\n";
+	std::cout << "Podaj liczbê a: " << "\n";
+	std::cin >> variableA;
+	std::cout << "Podaj liczbê b: " << "\n";
+	std::cin >> variableB;
+
+	arithmeticAverage = (variableA + variableB) / 2;
+	
+	std::cout << "Œrednia arytmetyczna tych liczb wynosi: " << arithmeticAverage << "\n";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie trzech liczb (a, b, c) i obliczy œredni¹ arytmetyczn¹ tych liczb. Nastêpnie wyœwietli wynik.
+void task11()
+{
+	float variableA, variableB, variableC, arithmeticAverage;
+
+	std::cout << "Program wylicza œredni¹ arytmetyczn¹ dwóch liczb" << "\n";
+	std::cout << "Podaj liczbê a: " << "\n";
+	std::cin >> variableA;
+	std::cout << "Podaj liczbê b: " << "\n";
+	std::cin >> variableB;
+	std::cout << "Podaj liczbê c: " << "\n";
+	std::cin >> variableC;
+
+	arithmeticAverage = (variableA + variableB + variableC) / 3;
+
+	std::cout << "Œrednia arytmetyczna tych liczb wynosi: " << arithmeticAverage << "\n";
+}
+
+//Program obliczaj¹cy œredni¹ wa¿on¹ trzech liczb z podanymi odpowiednimi wagami w1, w2 i w3.
+void task12()
+{
+	float variableA, variableB, variableC, weightedArithmeticAverage;
+
+	std::cout << "Program obliczaj¹cy œredni¹ wa¿on¹ trzech liczb z podanymi odpowiednimi wagami w1, w2 i w3." << "\n";
+	std::cout << "Podaj liczbê a: " << "\n";
+	std::cin >> variableA;
+	std::cout << "Podaj liczbê b" << "\n";
+	std::cin >> variableB;
+	std::cout << "Podaj liczbê c: " << "\n";
+	std::cin >> variableC;
+	
+	weightedArithmeticAverage = (1 * variableA + 2 * variableB + 3 * variableC) / 3;
+	
+	std::cout << "Œrednia wa¿ona tych liczb wynosi: " << weightedArithmeticAverage << "\n";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie dwóch liczb ca³kowitych. Nastêpnie wykona operacje (+, -, *, /) i wyœwietli wyniki.
+void task13()
+{
+	float variableA, variableB, result1, result2, result3, result4;
+	
+	std::cout << "Napisz program, który poprosi u¿ytkownika o podanie dwóch liczb ca³kowitych. Nastêpnie wykona operacje (+, -, *, /) i wyœwietli wyniki." << "\n";
+	std::cout << "Podaj liczbê a: " << "\n";
+	std::cin >> variableA;
+	std::cout << "Podaj liczbê b: " << "\n";
+	std::cin >> variableB;
+
+	result1 = variableA + variableB;
+	result2 = variableA - variableB;
+	result3 = variableA * variableB;
+	result4 = variableA / variableB;
+
+	std::cout << "Oto wyniki operacji (+, -, *, /): " << "\n" << result1 << "\n" << result2 << "\n" << result3 << "\n" << result4 << "\n";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie liczby sekund i przeliczy je na godziny i minuty, wyœwietlaj¹c wynik.
+void task14()
+{
+	float numberOfSecond, numberOfMinutes, numberOfHours;
+	
+	std::cout << "Podaj liczbê sekund: " << "\n";
+	std::cin >> numberOfSecond;
+	
+	numberOfMinutes = numberOfSecond / 60;
+	numberOfHours = numberOfMinutes / 60;
+	
+	std::cout << "Liczba minut wynosi: " << numberOfMinutes << "\n";
+	std::cout << "Liczba godzin wynosi: " << numberOfHours << "\n";
+}
+
+// Napisz program, który poprosi u¿ytkownika o podanie wspó³rzêdnych (x1, y1) i (x2, y2) dwóch punktów w uk³adzie kartezjañskim, a nastêpnie obliczy odleg³oœæ miêdzy nimi, wyœwietlaj¹c wynik.
+void task15()
+{
+	float variable_x1, variable_y1, variable_x2, variable_y2, distance;
+	
+	std::cout << "Podaj wartoœæ zmiennej x1: " << "\n";
+	std::cin >> variable_x1;
+	std::cout << "Podaj wartoœæ zmiennej y1: " << "\n";
+	std::cin >> variable_y2;
+	std::cout << "Podaj wartoœæ zmiennej x2: " << "\n";
+	std::cin >> variable_x2;
+	std::cout << "Podaj wartoœæ zmiennej y2: " << "\n";
+	std::cin >> variable_y2;
+
+	distance = (variable_x2 - variable_x1) + (variable_y2 - variable_y1);
+
+	std::cout << "Dystans pomiêdzy tymi zmiennymi wynosi: " << distance << "\n";
+}
 
 int main()
 {
@@ -115,7 +255,18 @@ int main()
 	//task1();
 	//task2();
 	//task3();
-	task4();
+	//task4();
+	//task5();
+	//task6();
+	//task7();
+	//task8();
+	//task9();
+	//task10();
+	//task11();
+	//task12();
+	//task13();
+	//task14();
+	task15();
 }
 
 
