@@ -4,7 +4,7 @@
 void task1()
 {
 	short ageFromUser;
-	
+
 	std::cout << "Podaj swoj wiek: ";
 	std::cin >> ageFromUser;
 
@@ -15,7 +15,7 @@ void task1()
 void task2()
 {
 	float  lenghtInMeterFromUser;
-	
+
 	std::cout << "Podaj dlugosc w metrach: ";
 	std::cin >> lenghtInMeterFromUser;
 
@@ -39,7 +39,7 @@ void task2()
 void task3()
 {
 	float sideLengthA, sideLenghtB, area;
-	
+
 	std::cout << "Program oblicza pole prostok¹ta" << "\n";
 	std::cout << "Podaj d³ugoœæ boku a: " << "\n";
 	std::cin >> sideLengthA;
@@ -73,7 +73,7 @@ void task4()
 void task5()
 {
 	float area, pi_number = 3.14, radius_from_user;
-	
+
 	std::cout << "Program oblicza pole powierzchni ko³a" << "\n";
 	std::cout << "Podaj d³ugoœæ promienia: " << "\n";
 	std::cin >> radius_from_user;
@@ -106,7 +106,7 @@ void task6()
 void task7()
 {
 	float sideOfTheCubeFromUser, volume;
-	
+
 	std::cout << "Program oblicza objêtoœæ szesæianu" << "\n";
 	std::cout << "Podaj krawêdŸ szeœcianu: " << "\n";
 	std::cin >> sideOfTheCubeFromUser;
@@ -120,7 +120,7 @@ void task7()
 void task8()
 {
 	float degreesCelciusFromUser, degreesFarenheit;
-	
+
 	std::cout << "Program przelicza temperature ze stopni Celcjusza na stopnie Farenheita" << "\n";
 	std::cout << "Podaj temperature w stopniah celcjusza: " << "\n";
 	std::cin >> degreesCelciusFromUser;
@@ -148,7 +148,7 @@ void task9()
 void task10()
 {
 	float variableA, variableB, arithmeticAverage;
-	
+
 	std::cout << "Program wylicza œredni¹ arytmetyczn¹ dwóch liczb" << "\n";
 	std::cout << "Podaj liczbê a: " << "\n";
 	std::cin >> variableA;
@@ -156,7 +156,7 @@ void task10()
 	std::cin >> variableB;
 
 	arithmeticAverage = (variableA + variableB) / 2;
-	
+
 	std::cout << "Œrednia arytmetyczna tych liczb wynosi: " << arithmeticAverage << "\n";
 }
 
@@ -190,9 +190,9 @@ void task12()
 	std::cin >> variableB;
 	std::cout << "Podaj liczbê c: " << "\n";
 	std::cin >> variableC;
-	
+
 	weightedArithmeticAverage = (1 * variableA + 2 * variableB + 3 * variableC) / 3;
-	
+
 	std::cout << "Œrednia wa¿ona tych liczb wynosi: " << weightedArithmeticAverage << "\n";
 }
 
@@ -200,7 +200,7 @@ void task12()
 void task13()
 {
 	float variableA, variableB, result1, result2, result3, result4;
-	
+
 	std::cout << "Napisz program, który poprosi u¿ytkownika o podanie dwóch liczb ca³kowitych. Nastêpnie wykona operacje (+, -, *, /) i wyœwietli wyniki." << "\n";
 	std::cout << "Podaj liczbê a: " << "\n";
 	std::cin >> variableA;
@@ -219,13 +219,13 @@ void task13()
 void task14()
 {
 	float numberOfSecond, numberOfMinutes, numberOfHours;
-	
+
 	std::cout << "Podaj liczbê sekund: " << "\n";
 	std::cin >> numberOfSecond;
-	
+
 	numberOfMinutes = numberOfSecond / 60;
 	numberOfHours = numberOfMinutes / 60;
-	
+
 	std::cout << "Liczba minut wynosi: " << numberOfMinutes << "\n";
 	std::cout << "Liczba godzin wynosi: " << numberOfHours << "\n";
 }
@@ -233,20 +233,20 @@ void task14()
 // Napisz program, który poprosi u¿ytkownika o podanie wspó³rzêdnych (x1, y1) i (x2, y2) dwóch punktów w uk³adzie kartezjañskim, a nastêpnie obliczy odleg³oœæ miêdzy nimi, wyœwietlaj¹c wynik.
 void task15()
 {
-	float variable_x1, variable_y1, variable_x2, variable_y2, distance;
-	
-	std::cout << "Podaj wartoœæ zmiennej x1: " << "\n";
+	int variable_x1, variable_y1, variable_x2, variable_y2, result;
+
+	std::cout << "Podaj wartoœæ x1: " << "\n";
 	std::cin >> variable_x1;
-	std::cout << "Podaj wartoœæ zmiennej y1: " << "\n";
-	std::cin >> variable_y2;
-	std::cout << "Podaj wartoœæ zmiennej x2: " << "\n";
+	std::cout << "Podaj wartoœæ y1: " << "\n";
+	std::cin >> variable_y1;
+	std::cout << "Podaj wartoœæ x2: " << "\n";
 	std::cin >> variable_x2;
-	std::cout << "Podaj wartoœæ zmiennej y2: " << "\n";
+	std::cout << "Podaj wartoœæ y2: " << "\n";
 	std::cin >> variable_y2;
 
-	distance = (variable_x2 - variable_x1) + (variable_y2 - variable_y1);
+	result = (variable_x2 - variable_x1);
 
-	std::cout << "Dystans pomiêdzy tymi zmiennymi wynosi: " << distance << "\n";
+	std::cout << "Odleg³oœæ miêdzy nimi wynosi: " << result << "\n";
 }
 
 int main()
@@ -265,8 +265,8 @@ int main()
 	//task11();
 	//task12();
 	//task13();
-	//task14();
-	task15();
+	task14();
+	//task15();
 }
 
 
