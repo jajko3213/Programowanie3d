@@ -314,4 +314,6 @@ Wymagania programistów:
 	* zaczynamy z du¿ej litery np.firstNumberFromUser
 - nazwa zmiennej musi oddwaæ charakter przechowywanych danych, czyli mieæ znaczenie
 - nazwy zmiennych po angielsku
+
+Filtr na zdjêcia o ma³ym rozmiarze w np. 1kb lub 1MB. zdjêcia dodaje siê poprzez klikniêcie w projekt a nastêpnie Open folder in explorer dodajemy zdj,
 */
