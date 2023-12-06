@@ -1,6 +1,3 @@
-// InstructionIfConsoleApplication.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 
 //Napisz program, którypobierze liczbê od u¿ytkownika i wyœwietli czy jest ona dodatnia czy nie.
@@ -10,6 +7,7 @@ void task1()
     std::cout << "Podaj liczbe, ktorom chcesz sprawdzic: ";  "\n";
     std::cin >> number;
     
+    //wersja 1
     if (number > 0)
     {
         std::cout << "Liczba jest dodatnia\n";
@@ -18,6 +16,18 @@ void task1()
     {
         std::cout << "Liczba jest ujemna\n";
     }
+    
+    //wersja 2
+    /*if (number > 0)
+    {
+        std::cout << "Liczba jest dodatnia\n";
+    }
+
+    if (number <= 0)
+    {
+        std::cout << "Liczba jest ujemna\n";
+    }
+    */
 }
 
 
