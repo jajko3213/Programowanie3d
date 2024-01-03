@@ -30,10 +30,41 @@ void task1()
     */
 }
 
+void task2()
+{
+    int firstNumber, secondNumber, thirdNumber, fourthNumber;
+    std::cout << "Podaj liczbê\n";
+    std::cin >> firstNumber;
+    std::cout << "Podaj liczbê\n";
+    std::cin >> secondNumber;
+    std::cout << "Podaj liczbê\n";
+    std::cin >> thirdNumber;
+    std::cout << "Podaj liczbê\n";
+    std::cin >> fourthNumber;
+
+    if (fourthNumber > firstNumber && fourthNumber > secondNumber && fourthNumber > thirdNumber)
+    {
+    std::cout << "Najwiêksza wartoœæ to " << fourthNumber << "\n";
+    }
+    else
+    {
+        if (thirdNumber > firstNumber && thirdNumber > secondNumber)
+            std::cout << "Najwiêksza wartoœæ to " << thirdNumber << "\n";
+        else
+        {
+            if (secondNumber > firstNumber)
+                std::cout << "Najwiêksza wartoœæ to " << secondNumber << "\n";
+            else
+                std::cout << "Najwiêksza liczba to " << firstNumber << "\n";
+        }
+    }
+}
+
 
 int main()
 {
-    task1();
+    //task1();
+    task2();
 }
 
 /*
