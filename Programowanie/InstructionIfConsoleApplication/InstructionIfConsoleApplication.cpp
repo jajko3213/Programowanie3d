@@ -1,5 +1,5 @@
 #include <iostream>
-
+//
 /*
 
 Priorytety operatorów:
@@ -63,11 +63,10 @@ void task1()
         std::cout << "Liczba jest ujemna\n";
     }
 
-
-    //std::cout << "dfgsdf";
+    
 }
 
-//Napisz program, który wczyta liczbê 
+//Napisz program, który wczyta liczbê
 //i sprawdzi czy jest ona z zakresu <1;10).
 void task2()
 {
