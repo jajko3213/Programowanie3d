@@ -40,14 +40,14 @@ Operatory logiczne:
 * 
 * 
 * 
-* Napisz program, który poprosi u¿ytkownika o podanie liczby od 1 do 7 i wyœwietli odpowiadaj¹cy mu dzieñ tygodnia.
-* Napisz program, który wczyta numer miesi¹ca i wyœwietli jego s³owny odpowiednik.
-* Napisz program, który poprosi u¿ytkownika o podanie roku i sprawdzi, czy jest to rok przestêpny. Wyœwietl odpowiedni komunikat.
+* 
+* 
+* 
 * Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i obliczy jej wartoœæ bezwzglêdn¹. Wyœwietl wynik.
-* Napisz program, który poprosi u¿ytkownika o podanie wieku i sprawdzi, czy osoba jest pe³noletnia. Wyœwietl odpowiedni komunikat.
+* 
 * Napisz program, który poprosi u¿ytkownika o podanie d³ugoœci trzech odcinków i sprawdzi, czy mo¿na zbudowaæ z nich trójk¹t. Wyœwietl odpowiedni komunikat.
-* Napisz program, który poprosi u¿ytkownika o podanie oceny w skali 100-punktowej i przeliczy j¹ na ocenê procentow¹ w przedziale od 0 do 100. Wyœwietl wynik.
-* Program wyœwietlaj¹cy odpowiedni komunikat w zale¿noœci od podanej oceny (np. "bardzo dobry" dla oceny 5, "dobry" dla oceny 4 itd.)
+* 
+* 
 * Napisz program, który na podstawie wspó³czynników równania kwadratowego (a, b, c) sprawdzi, czy to równanie ma rozwi¹zania rzeczywiste, i jeœli tak, to je obliczy.
 * Program sprawdzaj¹cy czy podana data jest poprawna (np. sprawdzaj¹c, czy dzieñ jest z zakresu od 1 do 31, miesi¹c od 1 do 12 itd.)
 */
@@ -278,43 +278,150 @@ powy¿ej 40.0 - oty³oœæ skrajn¹
 */
 void task10()
 {
-    float heightFromUser, weightFromUser, bMI;
+    float heightFromUser, weightFromUser, BMI;
     std::cout << "Program oblicza BMI\n";
     std::cout << "Podaj swój wzrost\n";
     std::cin >> heightFromUser;
     std::cout << "Podaj swoj¹ wagê\n";
     std::cin >> weightFromUser;
 
-    bMI = weightFromUser / (heightFromUser * heightFromUser);
+    BMI = weightFromUser / (heightFromUser * heightFromUser);
 
-    if (bMI < 16)
+    if (BMI < 16)
         std::cout << "Jesteœ wyg³odzony";
+    else if (BMI <= 16.99)
+        std::cout << "Jesteœ wychudzony";
+    else if (BMI <= 18.49)
+        std::cout << "Masz niedowagê";
+    else if (BMI <= 24.99)
+        std::cout << "Masz prawid³ow¹ wagê";
+    else if (BMI <= 29.9)
+        std::cout << "Masz nadwagê";
+    else if (BMI <= 34.99)
+        std::cout << "Masz I stopieñ oty³oœci";
+    else if (BMI <= 39.99)
+        std::cout << "Masz II stopieñ oty³oœci";
     else
-        if (bMI >= 16 && bMI <= 16.99)
-            std::cout << "Jesteœ wychudzony";
-        else
-            if (bMI >= 17 && bMI <= 18.49)
-                std::cout << "Masz niedowagê";
-            else
-                if (bMI >= 18.5 && bMI <= 24.99)
-                    std::cout << "Masz prawid³ow¹ wagê";
-                else
-                    if (bMI >= 25 && bMI <= 29.9)
-                        std::cout << "Masz nadwagê";
-                    else
-                        if (bMI >= 30 && bMI <= 34.99)
-                            std::cout << "Masz I stopieñ oty³oœci";
-                        else
-                            if (bMI >= 35 && bMI <= 39.99)
-                                std::cout << "Masz II stopieñ oty³oœci";
-                            else
-                                if (bMI >= 40)
-                                    std::cout << "Masz skrajn¹ oty³oœæ";
-                                else
-                                    std::cout << "....";
-                                
-        
+        std::cout << "Masz skrajn¹ oty³oœæ";
+}
 
+//Napisz program, który poprosi u¿ytkownika o podanie liczby od 1 do 7 i wyœwietli odpowiadaj¹cy mu dzieñ tygodnia.
+void task11()
+{
+    int numberFromUser;
+    std::cout << "Podaj liczbê ca³kowit¹ od 1 do 7\n";
+    std::cin >> numberFromUser;
+
+    if (numberFromUser == 1)
+        std::cout << "Poniedzia³ek";
+    else if (numberFromUser == 2)
+        std::cout << "Wtorek";
+    else if (numberFromUser == 3)
+        std::cout << "Œroda";
+    else if (numberFromUser == 4)
+        std::cout << "Czwartek";
+    else if (numberFromUser == 5)
+        std::cout << "Pi¹tek";
+    else if (numberFromUser == 6)
+        std::cout << "Sobota";
+    else 
+        std::cout << "Niedziela";
+}
+
+
+//Napisz program, który wczyta numer miesi¹ca i wyœwietli jego s³owny odpowiednik.
+void task12()
+{
+    int numberFromUser;
+    std::cout << "Podaj liczbê ca³kowit¹ od 1 do 12\n";
+    std::cin >> numberFromUser;
+
+    if (numberFromUser == 1)
+        std::cout << "Styczeñ";
+    else if (numberFromUser == 2)
+        std::cout << "Luty";
+    else if (numberFromUser == 3)
+        std::cout << "Marzec";
+    else if (numberFromUser == 4)
+        std::cout << "Kwiecieñ";
+    else if (numberFromUser == 5)
+        std::cout << "Maj";
+    else if (numberFromUser == 6)
+        std::cout << "Czerwiec";
+    else if (numberFromUser == 7)
+        std::cout << "Lipiec";
+    else if (numberFromUser == 8)
+        std::cout << "Sierpieñ";
+    else if (numberFromUser == 9)
+        std::cout << "Wrzesieñ";
+    else if (numberFromUser == 10)
+        std::cout << "PaŸdziernik";
+    else if (numberFromUser == 11)
+        std::cout << "Listopad";
+    else if (numberFromUser == 12)
+        std::cout << "Grudzieñ";
+    else
+        std::cout << "Poda³eœ z³¹ liczbê";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie roku i sprawdzi, czy jest to rok przestêpny. Wyœwietl odpowiedni komunikat.
+void task13()
+{
+    long yearFromUser;
+    std::cout << "Podaj rok\n";
+    std::cin >> yearFromUser;
+
+    if (yearFromUser % 4 == 0 && yearFromUser % 100 != 0)
+        std::cout << "Rok jest przestêpny";
+    else
+        std::cout << "Rok nie jest przestêpny";
+}
+
+
+//Napisz program, który poprosi u¿ytkownika o podanie wieku i sprawdzi, czy osoba jest pe³noletnia. Wyœwietl odpowiedni komunikat.
+void task14()
+{
+    int ageFromUser;
+    std::cout << "Podaj swój wiek\n";
+    std::cin >> ageFromUser;
+
+    if (ageFromUser >= 18)
+        std::cout << "Jesteœ pe³noletni";
+    else
+        std::cout << "Nie jesteœ pe³noletni";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie oceny w skali 100-punktowej i przeliczy j¹ na ocenê procentow¹ w przedziale od 0 do 100. Wyœwietl wynik.
+void task15()
+{
+    float amountOfPoints, precentageRating;
+    std::cout << "Podaj iloœæ punktów\n";
+    std::cin >> amountOfPoints;
+
+    precentageRating = amountOfPoints / 100 * 100;
+
+    std::cout << "Ocena to: " << precentageRating << "%";
+}
+
+//Program wyœwietlaj¹cy odpowiedni komunikat w zale¿noœci od podanej oceny (np. "bardzo dobry" dla oceny 5, "dobry" dla oceny 4 itd.)
+void task16()
+{
+    int numerFromUser;
+    std::cout << "Podaj swoj¹ ocenê\n";
+    std::cin >> numerFromUser;
+
+    if (numerFromUser == 6)
+        std::cout << "Celuj¹cy";
+    else if (numerFromUser == 5)
+        std::cout << "Bardzo dobry";
+    else if (numerFromUser == 4)
+        std::cout << "Dobry";
+    else if (numerFromUser == 3)
+        std::cout << "Dostateczny";
+    else if (numerFromUser == 2)
+        std::cout << "Dopuszczaj¹cy";
+    else
+        std::cout << "Niedostateczny";  
 }
 
 int main()
@@ -327,5 +434,11 @@ int main()
     //task7();
     //task8();
     //task9();
-    task10();
+    //task10();
+    //task11();
+    //task12();
+    //task13();
+    //task14();
+    //task15();
+    task16();
 }
