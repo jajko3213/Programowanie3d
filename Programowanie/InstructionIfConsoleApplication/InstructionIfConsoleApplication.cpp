@@ -45,7 +45,7 @@ Operatory logiczne:
 * 
 * Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i obliczy jej wartoœæ bezwzglêdn¹. Wyœwietl wynik.
 * 
-* Napisz program, który poprosi u¿ytkownika o podanie d³ugoœci trzech odcinków i sprawdzi, czy mo¿na zbudowaæ z nich trójk¹t. Wyœwietl odpowiedni komunikat.
+* 
 * 
 * 
 * Napisz program, który na podstawie wspó³czynników równania kwadratowego (a, b, c) sprawdzi, czy to równanie ma rozwi¹zania rzeczywiste, i jeœli tak, to je obliczy.
@@ -424,6 +424,25 @@ void task16()
         std::cout << "Niedostateczny";  
 }
 
+
+//Napisz program, który poprosi u¿ytkownika o podanie d³ugoœci trzech odcinków i sprawdzi, czy mo¿na zbudowaæ z nich trójk¹t. Wyœwietl odpowiedni komunikat.
+void task17()
+{
+    float firstSide, secondSide, thirdSide;
+    std::cout << "Podaj d³ugoœæ trzech odcinków, aby sprawdziæ czy da siê zbudowaæ z nich trójk¹t\n";
+    std::cout << "Podaj d³ugoœæ pierwszego odcinka\n";
+    std::cin >> firstSide;
+    std::cout << "Podaj d³ugoœæ drugiego\n";
+    std::cin >> secondSide;
+    std::cout << "Podaj d³ugoœæ trzeciego odcinka\n";
+    std::cin >> thirdSide;
+
+    if (firstSide < secondSide + thirdSide && secondSide < firstSide + thirdSide && thirdSide < firstSide + secondSide)
+        std::cout << "Da siê stworzyæ taki trójk¹t";
+    else
+        std::cout << "Nie da siê stworzyæ takiego trójk¹ta";
+}
+
 int main()
 {
     //task2();
@@ -440,5 +459,6 @@ int main()
     //task13();
     //task14();
     //task15();
-    task16();
+    //task16();
+    //task17();
 }
