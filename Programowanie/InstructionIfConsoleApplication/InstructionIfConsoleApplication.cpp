@@ -358,10 +358,9 @@ void task12()
         std::cout << "PaŸdziernik";
     else if (numberFromUser == 11)
         std::cout << "Listopad";
-    else if (numberFromUser == 12)
-        std::cout << "Grudzieñ";
     else
-        std::cout << "Poda³eœ z³¹ liczbê";
+        std::cout << "Grudzieñ";
+   
 }
 
 //Napisz program, który poprosi u¿ytkownika o podanie roku i sprawdzi, czy jest to rok przestêpny. Wyœwietl odpowiedni komunikat.
@@ -453,9 +452,9 @@ int main()
     //task7();
     //task8();
     //task9();
-    task10();
+    //task10();
     //task11();
-    //task12();
+    task12();
     //task13();
     //task14();
     //task15();
