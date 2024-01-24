@@ -289,17 +289,17 @@ void task10()
 
     if (BMI < 16)
         std::cout << "Jesteœ wyg³odzony";
-    else if (BMI <= 16.99)
+    else if (BMI >= 16 && BMI <= 16.99)
         std::cout << "Jesteœ wychudzony";
-    else if (BMI <= 18.49)
+    else if (BMI >= 17 && BMI <= 18.49)
         std::cout << "Masz niedowagê";
-    else if (BMI <= 24.99)
+    else if (BMI >=18.5 && BMI <= 24.99)
         std::cout << "Masz prawid³ow¹ wagê";
-    else if (BMI <= 29.9)
+    else if (BMI >= 25 && BMI <= 29.9)
         std::cout << "Masz nadwagê";
-    else if (BMI <= 34.99)
+    else if (BMI >= 30 && BMI <= 34.99)
         std::cout << "Masz I stopieñ oty³oœci";
-    else if (BMI <= 39.99)
+    else if (BMI >= 35 && BMI <= 39.99)
         std::cout << "Masz II stopieñ oty³oœci";
     else
         std::cout << "Masz skrajn¹ oty³oœæ";
@@ -453,7 +453,7 @@ int main()
     //task7();
     //task8();
     //task9();
-    //task10();
+    task10();
     //task11();
     //task12();
     //task13();
