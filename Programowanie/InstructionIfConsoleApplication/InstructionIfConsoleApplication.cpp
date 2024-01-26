@@ -508,6 +508,6 @@ int main()
 	//task15();
 	//task16();
 	//task17();
-	task18();
+	//task18();
 	//task19();
 }
