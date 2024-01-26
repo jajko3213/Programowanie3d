@@ -5,6 +5,7 @@
 
 int main()
 {
+	setlocale(LC_CTYPE, "polish");
 	std::cout << "Hello World!";
 	std::cout << "Nazywam sie Dawid.\n";
 	std::cout << 'X';
