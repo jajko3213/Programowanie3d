@@ -254,7 +254,7 @@ void task8()
 void task9()
 {
 	int numberFromUser;
-	std::cout << "Program sprawdza czy liczba jest podzielna przez 3 i przez 5";
+	std::cout << "Program sprawdza czy liczba jest podzielna przez 3 i przez 5\n";
 	std::cout << "Podaj liczbê:\n";
 	std::cin >> numberFromUser;
 
@@ -450,7 +450,7 @@ void task18()
 	std::cin >> number;
 
 	if (number < 0)
-		std::cout << "Wartoœæ bezwzglêdna tej liczby to: " << number * -1;
+		std::cout << "Wartoœæ bezwzglêdna tej liczby to: " << number * (-1);
 	else
 		std::cout << "Wartoœæ bezwzglêdna tej liczby to:" << number;
 }
@@ -491,6 +491,7 @@ void task20()
 
 int main()
 {
+	setlocale(LC_CTYPE, "polish");
 	//task2();
 	//task3();
 	//task4();
@@ -507,6 +508,6 @@ int main()
 	//task15();
 	//task16();
 	//task17();
-	//task18();
+	task18();
 	//task19();
 }
