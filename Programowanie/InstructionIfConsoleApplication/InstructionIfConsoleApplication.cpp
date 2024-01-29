@@ -329,8 +329,37 @@ void task11()
 	else
 		std::cout << "Nie ma takiego dnia tygodnia";
 
+	switch (numberFromUser)
+	{
+	case 1:
+		std::cout << "Poniedzia³ek";
+		break;
+	case 2:
+		std::cout << "Wtorek";
+		break;
+	case 3:
+		std::cout << "Œroda";
+		break;
+	case 4:
+		std::cout << "Czwartek";
+		break;
+	case 5:
+		std::cout << "Pi¹tek";
+		break;
+	case 6:
+		std::cout << "Sobota";
+		break;
+	case 7:
+		std::cout << "Niedziela";
+
+	default:
+		std::cout << "Nie ma takiego dnia tygodnia";
+		break;
+	}
 }
 
+//switch jeœli jest szereg ifów które maj¹ tylko "=="
+//(koñcowy else) deafult
 
 //Napisz program, który wczyta numer miesi¹ca i wyœwietli jego s³owny odpowiednik.
 void task12()
@@ -365,7 +394,6 @@ void task12()
 		std::cout << "Grudzieñ";
 	else
 		std::cout << "Nie ma takiego miesi¹ca";
-
 }
 
 //Napisz program, który poprosi u¿ytkownika o podanie roku i sprawdzi, czy jest to rok przestêpny. Wyœwietl odpowiedni komunikat.
