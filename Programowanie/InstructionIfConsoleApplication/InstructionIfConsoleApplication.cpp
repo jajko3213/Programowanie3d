@@ -489,6 +489,8 @@ void task20()
 	//idk
 }
 
+//kartkówka œroda
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
