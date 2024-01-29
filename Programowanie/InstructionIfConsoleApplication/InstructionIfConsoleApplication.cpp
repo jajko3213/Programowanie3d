@@ -361,8 +361,10 @@ void task12()
 		std::cout << "PaŸdziernik";
 	else if (numberFromUser == 11)
 		std::cout << "Listopad";
-	else
+	else if (numberFromUser == 12)
 		std::cout << "Grudzieñ";
+	else
+		std::cout << "Nie ma takiego miesi¹ca";
 
 }
 
