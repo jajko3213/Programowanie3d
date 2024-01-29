@@ -445,14 +445,14 @@ void task17()
 //Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i obliczy jej wartoœæ bezwzglêdn¹. Wyœwietl wynik.
 void task18()
 {
-	int number;
+	int numberFromUser;
 	std::cout << "Podja liczbê ca³kowit¹, aby obliczyæ wartoœæ bezwzglêdn¹\n";
-	std::cin >> number;
+	std::cin >> numberFromUser;
 
-	if (number < 0)
-		std::cout << "Wartoœæ bezwzglêdna tej liczby to: " << number * (-1);
+	if (numberFromUser < 0)
+		std::cout << "Wartoœæ bezwzglêdna tej liczby to: " << numberFromUser * (-1);
 	else
-		std::cout << "Wartoœæ bezwzglêdna tej liczby to:" << number;
+		std::cout << "Wartoœæ bezwzglêdna tej liczby to:" << numberFromUser;
 }
 
 //Program sprawdzaj¹cy czy podana data jest poprawna (np. sprawdzaj¹c, czy dzieñ jest z zakresu od 1 do 31, miesi¹c od 1 do 12 itd.)
