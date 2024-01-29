@@ -48,7 +48,7 @@ Operatory logiczne:
 *
 *
 *
-* 
+*
 *
 */
 
@@ -326,9 +326,9 @@ void task11()
 		std::cout << "Sobota";
 	else if (numberFromUser == 7)
 		std::cout << "Niedziela";
-	else if (numberFromUser > 7 || numberFromUser < 0)
+	else
 		std::cout << "Nie ma takiego dnia tygodnia";
-		
+
 }
 
 
@@ -476,10 +476,10 @@ void task19()
 
 	if ((month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) && day >= 1 && day <= 31)
 		std::cout << "Poprawna data\n";
-	else if ((month == 4 || month == 6 ||month == 9 || month ==11) && day >= 1 && day <= 30)
-			std::cout << "Poprawna data\n";
+	else if ((month == 4 || month == 6 || month == 9 || month == 11) && day >= 1 && day <= 30)
+		std::cout << "Poprawna data\n";
 	else if (month == 2 && day >= 1 && day <= 28 && ((year % 4) != 0 || ((year % 100) == 0 && (year % 400) != 0)))
-			std::cout << "Poprawna data\n";
+		std::cout << "Poprawna data\n";
 	else if (month == 2 && day >= 1 && day <= 29)
 		std::cout << "Poprawna data\n";
 	else
