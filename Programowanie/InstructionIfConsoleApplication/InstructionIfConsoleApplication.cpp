@@ -327,7 +327,7 @@ void task11()
 	else if (numberFromUser == 7)
 		std::cout << "Niedziela";
 	else
-		std::cout << "nie ma takiego dnia";
+		std::cout << "Nie ma takiego dnia";
 }
 
 
