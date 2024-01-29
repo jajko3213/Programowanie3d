@@ -324,8 +324,10 @@ void task11()
 		std::cout << "Pi¹tek";
 	else if (numberFromUser == 6)
 		std::cout << "Sobota";
-	else
+	else if (numberFromUser == 7)
 		std::cout << "Niedziela";
+	else
+		std::cout << "nie ma takiego dnia";
 }
 
 
