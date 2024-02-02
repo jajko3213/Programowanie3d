@@ -522,7 +522,6 @@ void task20()
 	//idk
 }
 
-//kartkówka œroda
 
 int main()
 {
@@ -545,4 +544,6 @@ int main()
 	//task17();
 	//task18();
 	//task19();
+	//task20();
+	
 }
