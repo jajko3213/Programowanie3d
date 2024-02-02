@@ -35,24 +35,6 @@ Operatory logiczne:
 
 */
 
-/*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*/
-
-
 //Napisz program, który pobierze liczbê od u¿ytkownika i wyœwietli czy jest ona dodatnia czy nie.
 void task1()
 {
