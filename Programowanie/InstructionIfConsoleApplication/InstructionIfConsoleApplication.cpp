@@ -426,6 +426,10 @@ void task12()
 	case 12:
 		std::cout << "Grudzieñ";
 		break;
+
+	default:
+		std::cout << "Nie ma takiego miesi¹ca";
+		break;
 	}
 }
 
