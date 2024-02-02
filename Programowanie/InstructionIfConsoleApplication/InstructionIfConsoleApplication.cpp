@@ -376,6 +376,57 @@ void task12()
 		std::cout << "Grudzieñ";
 	else
 		std::cout << "Nie ma takiego miesi¹ca";
+
+	switch (numberFromUser)
+	{
+	case 1:
+		std::cout << "Styczeñ";
+		break;
+
+	case 2:
+		std::cout << "Luty";
+		break;
+
+	case 3:
+		std::cout << "Marzec";
+		break;
+
+	case 4:
+		std::cout << "Kwiecieñ";
+		break;
+
+	case 5:
+		std::cout << "Maj";
+		break;
+
+	case 6:
+		std::cout << "Czerwiec";
+		break;
+
+	case 7:
+		std::cout << "Lipiec";
+		break;
+
+	case 8:
+		std::cout << "Sierpieñ";
+		break;
+
+	case 9:
+		std::cout << "Wrzesieñ";
+		break;
+
+	case 10:
+		std::cout << "PaŸdziernik";
+		break;
+
+	case 11:
+		std::cout << "Listopad";
+		break;
+
+	case 12:
+		std::cout << "Grudzieñ";
+		break;
+	}
 }
 
 //Napisz program, który poprosi u¿ytkownika o podanie roku i sprawdzi, czy jest to rok przestêpny. Wyœwietl odpowiedni komunikat.
