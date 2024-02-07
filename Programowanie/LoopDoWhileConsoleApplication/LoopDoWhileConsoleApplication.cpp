@@ -65,9 +65,49 @@ void task2()
 	} while (numberFromUser != randomNumber);
 }
 
+//Napisz program wyœwietlaj¹cy liczby ca³kowite z przedia³u <0; x>, x podaje u¿ytkownik;
+void task3()
+{
+	/*
+	1.Nieprawid³owo
+	int upperRange;
+	
+	std::cout << "Podaj górny zakres: ";
+	std::cin >> upperRange;
+
+	std::cout << "0, ";
+	if (upperRange >= 1)
+	{
+		std::cout << "1, ";
+		if (upperRange >= 2)
+		{
+			std::cout << "2, ";
+			if (upperRange >= 3)
+			{
+				std::cout << "3, ";
+				//......
+			}
+		}
+	}
+	*/
+
+	//Prawid³owo
+	int upperRange;
+
+	std::cout << "Podaj górny zakres: ";
+	std::cin >> upperRange;
+
+	int number = 0;
+	do
+	{
+		std::cout << number << ", ";
+		number++;
+	}while (upperRange >= number);
+}
+
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-	task2();
+	task3();
 }
-
