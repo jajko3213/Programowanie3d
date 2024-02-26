@@ -92,7 +92,7 @@ void task3()
 	*/
 
 	//Prawid³owo
-	int upperRange;
+	long long upperRange;
 
 	std::cout << "Podaj górny zakres: ";
 	std::cin >> upperRange;
@@ -105,9 +105,28 @@ void task3()
 	}while (upperRange >= number);
 }
 
+//Napisz program, który policzy sumê cyfr podanej przez u¿ytkownika liczby.
+void task4()
+{
+	int number, rest;
+
+	do
+	{
+		std::cout << "Podaj liczbê: \n";
+		std::cin >> number;
+	} while (number < 0);
+	
+	do
+	{
+		rest = number % 10;
+		std::cout << rest << ", ";
+
+		number = number / 10;
+	} while (number > 0);
+}
 
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-	task3();
+	task4();
 }
