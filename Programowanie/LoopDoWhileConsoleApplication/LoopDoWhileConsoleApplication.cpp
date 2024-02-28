@@ -108,11 +108,11 @@ void task3()
 //Napisz program, który policzy sumê cyfr podanej przez u¿ytkownika liczby.
 void task4()
 {
-	int number, rest;
+	int number, rest, sumOfDigits = 0;
 
 	do
 	{
-		std::cout << "Podaj liczbê: \n";
+		std::cout << "Podaj liczbê dodatni¹: \n";
 		std::cin >> number;
 	} while (number < 0);
 	
@@ -120,13 +120,81 @@ void task4()
 	{
 		rest = number % 10;
 		std::cout << rest << ", ";
-
+		sumOfDigits = sumOfDigits + rest;
 		number = number / 10;
 	} while (number > 0);
+
+	std::cout << "\nSuma cyfr wynosi: " << sumOfDigits;
+}
+
+//Napisz program, który poprosi u¿ytkownika o wprowadzenie dowolnej liczby ca³kowitej.Nastêpnie program powinien obliczyæ i wyœwietliæ liczbê cyfr.
+void task5()
+{
+	int number, numberOfDigits = 0, rest;
+
+	do
+	{
+		std::cout << "Podaj liczbê dodatni¹: \n";
+		std::cin >> number;
+	} while (number < 0);
+	
+	do
+	{
+		number = number / 10;
+		numberOfDigits++;
+	} while (number != 0);
+
+	std::cout << "Iloœæ cyfr wynosi: " << numberOfDigits;
+}
+
+//Napisz program, który sprawdza czy wiêcej jest cyfr parzystych, czy nieparzystych we wczytanej liczbie.
+void task6()
+{
+	int number, evenNumbers = 0, oddNumbers = 0, digit;
+
+	do
+	{
+		std::cout << "Podaj liczbê dodatni¹: \n";
+		std::cin >> number;
+	} while (number < 0);
+
+	do
+	{
+		digit = number % 10;
+		
+		if (digit % 2 == 0)
+			evenNumbers++;
+		else
+			oddNumbers++;
+		number = number / 10;
+	} while (number != 0);
+
+	if (evenNumbers > oddNumbers)
+		std::cout << "Wiêcej jest cyfr parzystych. Oto ile ich jest:" << evenNumbers;
+	else if (oddNumbers > evenNumbers)
+		std::cout << "Wiêcej jest liczb nieparzystych. Oto ile ich jest:" << oddNumbers;
+	else
+		std::cout << "liczb parzystych i nieparzystych jest tyle samo.";
+
+}
+
+//Poproœ u¿ytkownika o podawanie liczb, a¿ wprowadzi zero. Oblicz sumê oraz œredni¹ arytmetyczn¹ wprowadzonych liczb.
+void task7()
+{
+	int number, sum = 0, arithmeticAverage;
+
+	do
+	{
+		std::cout << "Podawaj liczby dodatnie: \n";
+		std::cin >> number;
+		sum = sum + number;
+		arithmeticAverage;
+	} while (number == 0);
+	
 }
 
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-	task4();
+	task6();
 }
