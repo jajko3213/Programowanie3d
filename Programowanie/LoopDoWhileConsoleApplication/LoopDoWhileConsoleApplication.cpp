@@ -170,11 +170,11 @@ void task6()
 	} while (number != 0);
 
 	if (evenNumbers > oddNumbers)
-		std::cout << "Wiêcej jest cyfr parzystych. Oto ile ich jest:" << evenNumbers;
+		std::cout << "Wiêcej jest cyfr parzystych. Oto ile ich jest:" << evenNumbers << "\n";
 	else if (oddNumbers > evenNumbers)
-		std::cout << "Wiêcej jest liczb nieparzystych. Oto ile ich jest:" << oddNumbers;
+		std::cout << "Wiêcej jest liczb nieparzystych. Oto ile ich jest:" << oddNumbers << "\n";
 	else
-		std::cout << "liczb parzystych i nieparzystych jest tyle samo.";
+		std::cout << "Liczb parzystych i nieparzystych jest tyle samo." << "\n";
 
 }
 
@@ -194,7 +194,6 @@ void task7()
 	divider--;
 	std::cout << "\nSuma liczb wynosi: " << sum;
 	arithmeticAverage = sum / divider;
-
 	std::cout << "\nŒrednia arytmetyczna wynosi: " << arithmeticAverage;
 }
 
