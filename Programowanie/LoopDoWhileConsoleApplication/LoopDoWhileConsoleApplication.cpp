@@ -181,20 +181,25 @@ void task6()
 //Poproœ u¿ytkownika o podawanie liczb, a¿ wprowadzi zero. Oblicz sumê oraz œredni¹ arytmetyczn¹ wprowadzonych liczb.
 void task7()
 {
-	int number, sum = 0, arithmeticAverage;
-
+	int number, sum = 0, arithmeticAverage = 0, divider = 0;
+	
 	do
 	{
 		std::cout << "Podawaj liczby dodatnie: \n";
 		std::cin >> number;
-		sum = sum + number;
-		arithmeticAverage;
-	} while (number == 0);
-	
+		sum += number;
+		divider++;
+	} while (number != 0);
+
+	divider--;
+	std::cout << "\nSuma liczb wynosi: " << sum;
+	arithmeticAverage = sum / divider;
+
+	std::cout << "\nŒrednia arytmetyczna wynosi: " << arithmeticAverage;
 }
 
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-	task6();
+	task7();
 }
