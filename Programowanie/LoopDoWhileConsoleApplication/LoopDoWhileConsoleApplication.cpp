@@ -142,7 +142,7 @@ void task5()
 	{
 		number = number / 10;
 		numberOfDigits++;
-	} while (number != 0);
+	} while (number > 0);
 
 	std::cout << "Iloœæ cyfr wynosi: " << numberOfDigits;
 }
@@ -167,7 +167,7 @@ void task6()
 		else
 			oddNumbers++;
 		number = number / 10;
-	} while (number != 0);
+	} while (number > 0);
 
 	if (evenNumbers > oddNumbers)
 		std::cout << "Wiêcej jest cyfr parzystych. Oto ile ich jest:" << evenNumbers << "\n";
@@ -200,5 +200,5 @@ void task7()
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-	task7();
+	task6();
 }

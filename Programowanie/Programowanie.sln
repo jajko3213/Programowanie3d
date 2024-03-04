@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InstructionIfConsoleApplica
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoopDoWhileConsoleApplication", "LoopDoWhileConsoleApplication\LoopDoWhileConsoleApplication.vcxproj", "{15DB11B6-9976-44DD-822B-D59B49DD41FE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoopWhileConsoleApplication", "LoopWhileConsoleApplication\LoopWhileConsoleApplication.vcxproj", "{0699A201-1F2A-405C-9FA5-2D72ECE2DC36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -55,6 +57,14 @@ Global
 		{15DB11B6-9976-44DD-822B-D59B49DD41FE}.Release|x64.Build.0 = Release|x64
 		{15DB11B6-9976-44DD-822B-D59B49DD41FE}.Release|x86.ActiveCfg = Release|Win32
 		{15DB11B6-9976-44DD-822B-D59B49DD41FE}.Release|x86.Build.0 = Release|Win32
+		{0699A201-1F2A-405C-9FA5-2D72ECE2DC36}.Debug|x64.ActiveCfg = Debug|x64
+		{0699A201-1F2A-405C-9FA5-2D72ECE2DC36}.Debug|x64.Build.0 = Debug|x64
+		{0699A201-1F2A-405C-9FA5-2D72ECE2DC36}.Debug|x86.ActiveCfg = Debug|Win32
+		{0699A201-1F2A-405C-9FA5-2D72ECE2DC36}.Debug|x86.Build.0 = Debug|Win32
+		{0699A201-1F2A-405C-9FA5-2D72ECE2DC36}.Release|x64.ActiveCfg = Release|x64
+		{0699A201-1F2A-405C-9FA5-2D72ECE2DC36}.Release|x64.Build.0 = Release|x64
+		{0699A201-1F2A-405C-9FA5-2D72ECE2DC36}.Release|x86.ActiveCfg = Release|Win32
+		{0699A201-1F2A-405C-9FA5-2D72ECE2DC36}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +74,7 @@ Global
 		{00C6CCD5-E8E7-48E1-AC30-A32887E3F1BE} = {7D7DCDF5-3C95-466F-A89A-3098DC90CAE1}
 		{FB8C1456-40F5-4222-8AB0-9EA51035F122} = {90416BDF-3471-418F-81F8-69D88EE6BC11}
 		{15DB11B6-9976-44DD-822B-D59B49DD41FE} = {90416BDF-3471-418F-81F8-69D88EE6BC11}
+		{0699A201-1F2A-405C-9FA5-2D72ECE2DC36} = {90416BDF-3471-418F-81F8-69D88EE6BC11}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34C36E17-B9A8-4CB1-99CD-669B47983D88}
