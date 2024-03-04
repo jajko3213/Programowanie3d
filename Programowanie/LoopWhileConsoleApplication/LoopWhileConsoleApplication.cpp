@@ -58,7 +58,7 @@ void task2()
 		std::cin >> secondNumber;
 	} while (secondNumber < 0);
 
-	if (secondNumber != 0)
+	/*if (secondNumber != 0)
 	{
 		int tmpfirstNumber = firstNumber;
 		firstNumber = secondNumber;
@@ -67,6 +67,14 @@ void task2()
 		{
 			//...
 		}
+	}
+	*/
+
+	while (secondNumber != 0)
+	{
+		int tmpfirstNumber = firstNumber;
+		firstNumber = secondNumber;
+		secondNumber = tmpfirstNumber % secondNumber;
 	}
 
 	std::cout << "NWD = " << firstNumber;
