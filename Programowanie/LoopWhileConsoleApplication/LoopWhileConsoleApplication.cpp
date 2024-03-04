@@ -38,14 +38,38 @@ void task1()
 }
 
 //Napisz program, który policzy NWD dwóch liczb.
-void task2()
-{
-	/*
+/*
 	 Wzór na NWD = { a , b = 0												}
 				   { NWD(b, a % b), b != 0 (skreœlony znak równoœci, nie !=)}
-	*/
+*/
+void task2()
+{
+	int firstNumber, secondNumber;
 
+	do
+	{
+		std::cout << "Podaj pierwsz¹ liczbê dodatni¹: \n";
+		std::cin >> firstNumber;
+	} while (firstNumber < 0);
 
+	do
+	{
+		std::cout << "Podaj drug¹ liczbê dodatni¹: \n";
+		std::cin >> secondNumber;
+	} while (secondNumber < 0);
+
+	if (secondNumber != 0)
+	{
+		int tmpfirstNumber = firstNumber;
+		firstNumber = secondNumber;
+		secondNumber = tmpfirstNumber % secondNumber;
+		if (secondNumber != 0)
+		{
+			//...
+		}
+	}
+
+	std::cout << "NWD = " << firstNumber;
 }
 
 int main()
