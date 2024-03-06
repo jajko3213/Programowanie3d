@@ -80,6 +80,12 @@ void task2()
 	std::cout << "NWD = " << firstNumber;
 }
 
+//
+void task3()
+{
+	
+}
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
