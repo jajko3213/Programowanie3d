@@ -17,9 +17,18 @@ void task1()
 	}
 }
 
+//Napisz program wyœwietlaj¹cy na ekranie kolejne liczby naturalne od 1 do 10
+void task2()
+{
+	for (int i = 1; i <= 10; i++)
+	{
+		std::cout << i << "\n";
+	}
+}
+
 int main()
 {
     setlocale(LC_CTYPE, "polish");
-    task1();
+    task2();
 }
 
