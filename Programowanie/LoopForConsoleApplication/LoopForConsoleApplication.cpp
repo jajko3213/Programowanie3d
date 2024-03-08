@@ -7,11 +7,11 @@ void task1()
     
 	do
 	{
-		std::cout << "Podaj pierwsz¹ liczbê dodatni¹: \n";
+		std::cout << "Podaj liczbê dodatni¹: \n";
 		std::cin >> number;
 	} while (number < 0);
     
-	for (int counter = 0; counter != number; counter++)
+	for (int i = 0; i != number; i++)
 	{
 		std::cout << "Hello World\n";
 	}

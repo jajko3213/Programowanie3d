@@ -111,7 +111,7 @@ void task4()
 	
 	do
 	{
-		std::cout << "Podaj pierwsz¹ liczbê dodatni¹: \n";
+		std::cout << "Podaj liczbê dodatni¹: \n";
 		std::cin >> number;
 	} while (number < 0);
 
@@ -137,7 +137,7 @@ void task5()
 
 	do
 	{
-		std::cout << "Podaj pierwsz¹ liczbê dodatni¹: \n";
+		std::cout << "Podaj liczbê dodatni¹: \n";
 		std::cin >> number;
 	} while (number < 0);
 
