@@ -130,8 +130,27 @@ void task4()
 		std::cout << "Liczba jest nie palindromem";
 }
 
+//Napisz program, który wyœwietli "Hello World" tyle razy ile chce u¿ytkownik
+void task5()
+{
+	int number, counter = 0;
+
+	do
+	{
+		std::cout << "Podaj pierwsz¹ liczbê dodatni¹: \n";
+		std::cin >> number;
+	} while (number < 0);
+
+	
+	while (counter != number)
+	{
+		std::cout << "Hello World\n";
+		counter++;
+	}
+}
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-	task4();
+	task5();
 }
