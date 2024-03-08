@@ -104,9 +104,34 @@ void task3()
 	std::cout << "Populacja miasta B wynios³a " << bCityPopulation << " po " << years << " latach";
 }
 
+//Sprawdzenie czy liczba jest palindromem
+void task4()
+{
+	int number;
+	
+	do
+	{
+		std::cout << "Podaj pierwsz¹ liczbê dodatni¹: \n";
+		std::cin >> number;
+	} while (number < 0);
+
+	int tmpNumber = number;
+	int reversNumber = 0;
+	while ( tmpNumber > 0)
+	{
+		int rest = tmpNumber % 10;
+		reversNumber = reversNumber * 10 + rest;
+		tmpNumber = tmpNumber / 10;
+	}
+
+	if (number == reversNumber)
+		std::cout << "Liczba jest palindromem";
+	else
+		std::cout << "Liczba jest nie palindromem";
+}
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-	task3();
+	task4();
 }
-
