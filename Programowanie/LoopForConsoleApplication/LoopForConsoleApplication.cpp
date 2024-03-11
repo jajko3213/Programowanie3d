@@ -26,9 +26,37 @@ void task2()
 	}
 }
 
+//Namaluj równoleg³obok z "X". Wysokoœæ i szeokoœæ wczytaj z klawiatury.
+void task3()
+{
+	int width, height;
+
+	do
+	{
+		std::cout << "Podaj szerokoœæ: \n";
+		std::cin >> width;
+	} while (width < 0);
+
+	do
+	{
+		std::cout << "Podaj wysokoœæ: \n";
+		std::cin >> height;
+	} while (height < 0);
+
+	for (int i = 0; i < height; i++)
+	{
+		for (int j = 0; j < width; j++)
+		{
+			std::cout << "X";
+		}
+		std::cout << "\n";
+	}
+}
+
+
 int main()
 {
     setlocale(LC_CTYPE, "polish");
-    task2();
+    task3();
 }
 
