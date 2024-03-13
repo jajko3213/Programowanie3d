@@ -56,7 +56,7 @@ void task3()
 //Program obliczaj¹cy sumê liczb od 1 do 100
 void task4()
 {
-	int sum = 0, number;
+	int sum = 0;
 
 	for (int i = 1; i <= 100; i++)
 	{
@@ -66,32 +66,39 @@ void task4()
 	std::cout << "Suma liczb od 1 do 100 wynosi: " << sum;
 }
 
-/*
-Program sprawdzaj¹cy czy podana liczba jest liczb¹ doskona³¹(czyli tak¹, której suma dzielników(z wy³¹czeniem samej siebie) jest równa danej
-liczbie, np. 6 jest liczb¹ doskona³¹, poniewa¿ 1 + 2 + 3 = 6).
-*/
+// Program wyœwietlaj¹cy na ekranie kwadraty liczb od 1 do 10 (np. 1, 4, 9, 16 itd.)
 void task5()
 {
-	int sumOfDivisors = 0, number;
+	for (int i = 1; i <= 10; i++)
+	{
+		std::cout << i * i << ", ";
+	}
+}
+
+//Program obliczaj¹cy n!.
+void task6()
+{
+	int number, silnia = 1;
 
 	do
 	{
-		std::cout << "Podaj liczbê: \n";
+		std::cout << "Podaj liczbê dodatni¹: ";
 		std::cin >> number;
 	} while (number < 0);
 
-	for (int i = 0; i < number; i++)
+	for (int i = number; i > 1; i--)
 	{
-		if ()
+		silnia *= i;
 	}
+
+	std::cout << "Silnia z liczby " << number << " wynosi: " << silnia;
 }
 
 /*
 * 
-* 
-* Program wyœwietlaj¹cy na ekranie kwadraty liczb od 1 do 10 (np. 1, 4, 9, 16 itd.)
-* Program obliczaj¹cy n!.
-* Program wyœwietlaj¹cy na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4! itd.)
+* Program sprawdzaj¹cy czy podana liczba jest liczb¹ doskona³¹(czyli tak¹, której suma dzielników(z wy³¹czeniem samej siebie) jest równa danej
+  liczbie, np. 6 jest liczb¹ doskona³¹, poniewa¿ 1 + 2 + 3 = 6).
+* Program wyœwietlaj¹cy na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4!itd.)
 * Program wyœwietlaj¹cy na ekranie tabliczkê mno¿enia od 1 do 9 (np. 1x1=1, 1x2=2, 1x3=3 itd.).
 * Program wyœwietlaj¹cy na ekranie wszystkie liczby podzielne przez 3 z zakresu od 1 do 100
 * Program obliczaj¹cy sumê kwadratów liczb od 1 do 10
@@ -102,6 +109,5 @@ void task5()
 int main()
 {
     setlocale(LC_CTYPE, "polish");
-    task4();
 }
 
