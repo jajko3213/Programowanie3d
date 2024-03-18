@@ -145,21 +145,61 @@ void task10()
 	}
 }
 
-/*
-* 
-* Program sprawdzaj¹cy czy podana liczba jest liczb¹ doskona³¹(czyli tak¹, której suma dzielników(z wy³¹czeniem samej siebie) jest równa danej
-  liczbie, np. 6 jest liczb¹ doskona³¹, poniewa¿ 1 + 2 + 3 = 6).
-* Program wyœwietlaj¹cy na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4!itd.)
-* 
-* 
-* 
-* 
-* Program wyœwietlaj¹cy na ekranie ci¹g Fibonacciego do 20 elementu (ci¹g Fibonacciego to ci¹g gdzie ka¿dy element jest sum¹ dwóch poprzednich, np. 0, 1, 1, 2, 3, 5, 8, 13 itd.)
-*/
+//Program wyœwietlaj¹cy na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4!itd.)
+void task11()
+{
+	for (int i = 1; i <= 10; i++)
+	{
+		int silnia = 1;
+		for (int j = 1; j <= i; j++)
+		{
+			silnia *= j;
+		}
+		std::cout << "Silnia z " << i << " to " << silnia << "\n";
+	}
+}
+
+//Program sprawdzaj¹cy czy podana liczba jest liczb¹ doskona³¹(czyli tak¹, której suma dzielników(z wy³¹czeniem samej siebie) jest równa danej
+//liczbie, np. 6 jest liczb¹ doskona³¹, poniewa¿ 1 + 2 + 3 = 6).
+void task12()
+{
+	int number, counter = 0, i;
+
+	std::cout << "Podaj liczbê: ";
+	std::cin >> number;
+
+	for (i = 1; i < number; i++)
+	{
+		if (number % i == 0)
+		{
+			counter += i;
+		}	
+	}
+	
+	if (counter == number)
+		std::cout << "Liczba któr¹ poda³eœ jest liczb¹ doskona³¹.";
+	else
+		std::cout << "Liczba któr¹ poda³eœ nie jest liczb¹ doskona³¹.";
+}
+
+//Program wyœwietlaj¹cy na ekranie ci¹g Fibonacciego do 20 elementu (ci¹g Fibonacciego to ci¹g gdzie ka¿dy element 
+//jest sum¹ dwóch poprzednich, np. 0, 1, 1, 2, 3, 5, 8, 13 itd.)
+void task13()
+{
+	int fibonacciNumber = 0, tmp = 1, tmpSecond = 0;
+
+	for (int i = 0; i < 20; i++)
+	{
+		tmpSecond = fibonacciNumber;
+		std::cout << fibonacciNumber << ", ";
+		fibonacciNumber = fibonacciNumber + tmp;
+		tmp = tmpSecond;
+	}
+}
 
 int main()
 {
     setlocale(LC_CTYPE, "polish");
-	task10();
+	task13();
 }
 
