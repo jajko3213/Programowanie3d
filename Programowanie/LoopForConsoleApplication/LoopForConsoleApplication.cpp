@@ -1,13 +1,13 @@
-#include <iostream>
+Ôªø#include <iostream>
 
-//Napisz program, ktÛry wyúwietli "Hello World" tyle razy ile chce uøytkownik
+//Napisz program, kt√≥ry wy≈õwietli "Hello World" tyle razy ile chce u≈ºytkownik
 void task1()
 {
 	int number;
     
 	do
 	{
-		std::cout << "Podaj liczbÍ dodatniπ: \n";
+		std::cout << "Podaj liczbƒô dodatniƒÖ: \n";
 		std::cin >> number;
 	} while (number < 0);
     
@@ -17,7 +17,7 @@ void task1()
 	}
 }
 
-//Napisz program wyúwietlajπcy na ekranie kolejne liczby naturalne od 1 do 10
+//Napisz program wy≈õwietlajƒÖcy na ekranie kolejne liczby naturalne od 1 do 10
 void task2()
 {
 	for (int i = 1; i <= 10; i++)
@@ -26,20 +26,20 @@ void task2()
 	}
 }
 
-//Namaluj rÛwnoleg≥obok z "X". WysokoúÊ i szeokoúÊ wczytaj z klawiatury.
+//Namaluj r√≥wnoleg≈Çobok z "X". Wysoko≈õƒá i szeoko≈õƒá wczytaj z klawiatury.
 void task3()
 {
 	int width, height;
 
 	do
 	{
-		std::cout << "Podaj szerokoúÊ: \n";
+		std::cout << "Podaj szeroko≈õƒá: \n";
 		std::cin >> width;
 	} while (width < 0);
 
 	do
 	{
-		std::cout << "Podaj wysokoúÊ: \n";
+		std::cout << "Podaj wysoko≈õƒá: \n";
 		std::cin >> height;
 	} while (height < 0);
 
@@ -53,7 +53,7 @@ void task3()
 	}
 }
 
-//Program obliczajπcy sumÍ liczb od 1 do 100
+//Program obliczajƒÖcy sumƒô liczb od 1 do 100
 void task4()
 {
 	int sum = 0;
@@ -66,7 +66,7 @@ void task4()
 	std::cout << "Suma liczb od 1 do 100 wynosi: " << sum;
 }
 
-// Program wyúwietlajπcy na ekranie kwadraty liczb od 1 do 10 (np. 1, 4, 9, 16 itd.)
+// Program wy≈õwietlajƒÖcy na ekranie kwadraty liczb od 1 do 10 (np. 1, 4, 9, 16 itd.)
 void task5()
 {
 	for (int i = 1; i <= 10; i++)
@@ -75,14 +75,14 @@ void task5()
 	}
 }
 
-//Program obliczajπcy n!.
+//Program obliczajƒÖcy n!.
 void task6()
 {
 	int number, silnia = 1;
 
 	do
 	{
-		std::cout << "Podaj liczbÍ dodatniπ: ";
+		std::cout << "Podaj liczbƒô dodatniƒÖ: ";
 		std::cin >> number;
 	} while (number < 0);
 
@@ -94,7 +94,7 @@ void task6()
 	std::cout << "Silnia z liczby " << number << " wynosi: " << silnia;
 }
 
-//Program obliczajπcy sumÍ kwadratÛw liczb od 1 do 10
+//Program obliczajƒÖcy sumƒô kwadrat√≥w liczb od 1 do 10
 void task7()
 {
 	int sum = 0;
@@ -103,17 +103,17 @@ void task7()
 	{
 		sum += i * i;
 	}
-	std::cout << "Suma kwadratÛw liczb od 1 do 10 wynosi: " << sum;
+	std::cout << "Suma kwadrat√≥w liczb od 1 do 10 wynosi: " << sum;
 }
 
-//Program, ktÛry wczyta podstawÍ oraz wyk≥adnik oraz wyliczy wynik.
+//Program, kt√≥ry wczyta podstawƒô oraz wyk≈Çadnik oraz wyliczy wynik.
 void task8()
 {
 	int result = 1, base, exponent;
 
-	std::cout << "Podaj podstawÍ: ";
+	std::cout << "Podaj podstawƒô: ";
 	std::cin >> base;
-	std::cout << "Podaj wyk≥adnik: ";
+	std::cout << "Podaj wyk≈Çadnik: ";
 	std::cin >> exponent;
 
 	for (int i = 0; i < exponent; i++)
@@ -123,7 +123,7 @@ void task8()
 	std::cout << "Wynik wynosi :" << result;
 }
 
-//Program wyúwietlajπcy na ekranie wszystkie liczby podzielne przez 3 z zakresu od 1 do 100
+//Program wy≈õwietlajƒÖcy na ekranie wszystkie liczby podzielne przez 3 z zakresu od 1 do 100
 void task9()
 {
 	for (int i = 0; i <= 100; i++)
@@ -133,7 +133,7 @@ void task9()
 	}
 }
 
-//Program wyúwietlajπcy na ekranie tabliczkÍ mnoøenia od 1 do 9 (np. 1x1=1, 1x2=2, 1x3=3 itd.).
+//Program wy≈õwietlajƒÖcy na ekranie tabliczkƒô mno≈ºenia od 1 do 9 (np. 1x1=1, 1x2=2, 1x3=3 itd.).
 void task10()
 {
 	for (int i = 1; i <= 9; i++)
@@ -145,7 +145,7 @@ void task10()
 	}
 }
 
-//Program wyúwietlajπcy na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4!itd.)
+//Program wy≈õwietlajƒÖcy na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4!itd.)
 void task11()
 {
 	for (int i = 1; i <= 10; i++)
@@ -159,13 +159,13 @@ void task11()
 	}
 }
 
-//Program sprawdzajπcy czy podana liczba jest liczbπ doskona≥π(czyli takπ, ktÛrej suma dzielnikÛw(z wy≥πczeniem samej siebie) jest rÛwna danej
-//liczbie, np. 6 jest liczbπ doskona≥π, poniewaø 1 + 2 + 3 = 6).
+//Program sprawdzajƒÖcy czy podana liczba jest liczbƒÖ doskona≈ÇƒÖ(czyli takƒÖ, kt√≥rej suma dzielnik√≥w(z wy≈ÇƒÖczeniem samej siebie) jest r√≥wna danej
+//liczbie, np. 6 jest liczbƒÖ doskona≈ÇƒÖ, poniewa≈º 1 + 2 + 3 = 6).
 void task12()
 {
 	int number, counter = 0, i;
 
-	std::cout << "Podaj liczbÍ: ";
+	std::cout << "Podaj liczbƒô: ";
 	std::cin >> number;
 
 	for (i = 1; i < number; i++)
@@ -177,13 +177,13 @@ void task12()
 	}
 	
 	if (counter == number)
-		std::cout << "Liczba ktÛrπ poda≥eú jest liczbπ doskona≥π.";
+		std::cout << "Liczba kt√≥rƒÖ poda≈Çe≈õ jest liczbƒÖ doskona≈ÇƒÖ.";
 	else
-		std::cout << "Liczba ktÛrπ poda≥eú nie jest liczbπ doskona≥π.";
+		std::cout << "Liczba kt√≥rƒÖ poda≈Çe≈õ nie jest liczbƒÖ doskona≈ÇƒÖ.";
 }
 
-//Program wyúwietlajπcy na ekranie ciπg Fibonacciego do 20 elementu (ciπg Fibonacciego to ciπg gdzie kaødy element 
-//jest sumπ dwÛch poprzednich, np. 0, 1, 1, 2, 3, 5, 8, 13 itd.)
+//Program wy≈õwietlajƒÖcy na ekranie ciƒÖg Fibonacciego do 20 elementu (ciƒÖg Fibonacciego to ciƒÖg gdzie ka≈ºdy element 
+//jest sumƒÖ dw√≥ch poprzednich, np. 0, 1, 1, 2, 3, 5, 8, 13 itd.)
 void task13()
 {
 	int fibonacciNumber = 0, tmp = 1, tmpSecond = 0;
@@ -197,7 +197,7 @@ void task13()
 	}
 }
 
-/* Program, kÛry wyúwietli poniøsze wzory:
+/* Program, k√≥ry wy≈õwietli poni≈ºsze wzory:
 ****     *		54321        121212        122333
 *** 	***		65432        212121        223334444
 **	   *****	76543        121212        333444455555
@@ -212,19 +212,15 @@ void task14()
 	std::cout << "\n122333\n 223334444\n 333444455555\n 444455555666666";
 }
 
-//Napisz program ktÛry roz≥oøy liczbÍ na czynniki pierwsze
-void task15()
-{
+//Napisz program kt√≥ry roz≈Ço≈ºy liczbƒô na czynniki pierwsze
 
-}
-
-//Oblicz sumÍ szeregu 1/1^2 + 1/2^2 + 1/3^2 + ... +1/n^2. Jeøeli siÍ nie pomylisz, to dla odpowiednio duøej wartoúci n po przemnoøeniu 
-//jej przez 6 i spierwiastkowaniu powinieneú otrzymaÊ wartoúÊ liczby ? (suma szeregu jest rÛwna ?2/6). ZwrÛÊ uwagÍ, øe pierwsza 
-//wartoúÊ indeksu to 1, a nie 0. Dok≥adnoúÊ obliczeÒ moøna sprawdziÊ porÛwnujπc z wartoúciπ odczytanπ z w≥asnoúci Math.PI.
+//Oblicz sumƒô szeregu 1/1^2 + 1/2^2 + 1/3^2 + ... +1/n^2. Je≈ºeli siƒô nie pomylisz, to dla odpowiednio du≈ºej warto≈õci n po przemno≈ºeniu 
+//jej przez 6 i spierwiastkowaniu powiniene≈õ otrzymaƒá warto≈õƒá liczby œÄ (suma szeregu jest r√≥wna œÄ2/6). Zwr√≥ƒá uwagƒô, ≈ºe pierwsza 
+//warto≈õƒá indeksu to 1, a nie 0. Dok≈Çadno≈õƒá oblicze≈Ñ mo≈ºna sprawdziƒá por√≥wnujƒÖc z warto≈õciƒÖ odczytanƒÖ z w≈Çasno≈õci Math.PI.
 
 int main()
 {
     setlocale(LC_CTYPE, "polish");
-	task15();
+	task14();
 }
 
