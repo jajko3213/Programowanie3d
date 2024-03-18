@@ -94,20 +94,72 @@ void task6()
 	std::cout << "Silnia z liczby " << number << " wynosi: " << silnia;
 }
 
+//Program obliczaj¹cy sumê kwadratów liczb od 1 do 10
+void task7()
+{
+	int sum = 0;
+
+	for (int i = 1; i <= 10; i++)
+	{
+		sum += i * i;
+	}
+	std::cout << "Suma kwadratów liczb od 1 do 10 wynosi: " << sum;
+}
+
+//Program, który wczyta podstawê oraz wyk³adnik oraz wyliczy wynik.
+void task8()
+{
+	int result = 1, base, exponent;
+
+	std::cout << "Podaj podstawê: ";
+	std::cin >> base;
+	std::cout << "Podaj wyk³adnik: ";
+	std::cin >> exponent;
+
+	for (int i = 0; i < exponent; i++)
+	{
+		result *= base;
+	}
+	std::cout << "Wynik wynosi :" << result;
+}
+
+//Program wyœwietlaj¹cy na ekranie wszystkie liczby podzielne przez 3 z zakresu od 1 do 100
+void task9()
+{
+	for (int i = 0; i <= 100; i++)
+	{
+		if (i % 3 == 0)
+			std::cout << i << ", ";
+	}
+}
+
+//Program wyœwietlaj¹cy na ekranie tabliczkê mno¿enia od 1 do 9 (np. 1x1=1, 1x2=2, 1x3=3 itd.).
+void task10()
+{
+	for (int i = 1; i <= 9; i++)
+	{
+		for (int j = 1; j <= 9; j++)
+		{
+			std::cout << i << "x" << j << "=" << i * j << "\n";
+		}
+	}
+}
+
 /*
 * 
 * Program sprawdzaj¹cy czy podana liczba jest liczb¹ doskona³¹(czyli tak¹, której suma dzielników(z wy³¹czeniem samej siebie) jest równa danej
   liczbie, np. 6 jest liczb¹ doskona³¹, poniewa¿ 1 + 2 + 3 = 6).
 * Program wyœwietlaj¹cy na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4!itd.)
-* Program wyœwietlaj¹cy na ekranie tabliczkê mno¿enia od 1 do 9 (np. 1x1=1, 1x2=2, 1x3=3 itd.).
-* Program wyœwietlaj¹cy na ekranie wszystkie liczby podzielne przez 3 z zakresu od 1 do 100
-* Program obliczaj¹cy sumê kwadratów liczb od 1 do 10
-* Program, który wczyta podstawê oraz wyk³adnik oraz wyliczy wynik.
+* 
+* 
+* 
+* 
 * Program wyœwietlaj¹cy na ekranie ci¹g Fibonacciego do 20 elementu (ci¹g Fibonacciego to ci¹g gdzie ka¿dy element jest sum¹ dwóch poprzednich, np. 0, 1, 1, 2, 3, 5, 8, 13 itd.)
 */
 
 int main()
 {
     setlocale(LC_CTYPE, "polish");
+	task10();
 }
 
