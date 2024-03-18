@@ -197,9 +197,34 @@ void task13()
 	}
 }
 
+/* Program, kóry wyœwietli poni¿sze wzory:
+****     *		54321        121212        122333
+*** 	***		65432        212121        223334444
+**	   *****	76543        121212        333444455555
+*     *******	87654        212121        444455555666666
+*/
+void task14()
+{
+	std::cout << "**** \n***\n** \n* \n";
+	std::cout << "\n   *\n  ***\n *****\n*******\n";
+	std::cout << "\n54321\n 65432\n 76543\n 87654\n";
+	std::cout << "\n121212\n 212121\n 121212\n 212121\n";
+	std::cout << "\n122333\n 223334444\n 333444455555\n 444455555666666";
+}
+
+//Napisz program który roz³o¿y liczbê na czynniki pierwsze
+void task15()
+{
+
+}
+
+//Oblicz sumê szeregu 1/1^2 + 1/2^2 + 1/3^2 + ... +1/n^2. Je¿eli siê nie pomylisz, to dla odpowiednio du¿ej wartoœci n po przemno¿eniu 
+//jej przez 6 i spierwiastkowaniu powinieneœ otrzymaæ wartoœæ liczby ? (suma szeregu jest równa ?2/6). Zwróæ uwagê, ¿e pierwsza 
+//wartoœæ indeksu to 1, a nie 0. Dok³adnoœæ obliczeñ mo¿na sprawdziæ porównuj¹c z wartoœci¹ odczytan¹ z w³asnoœci Math.PI.
+
 int main()
 {
     setlocale(LC_CTYPE, "polish");
-	task13();
+	task15();
 }
 
