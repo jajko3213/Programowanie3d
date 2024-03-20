@@ -213,6 +213,28 @@ void task14()
 }
 
 //Napisz program który rozłoży liczbę na czynniki pierwsze
+void task15()
+{
+	int number;
+
+	std::cout << "Podaj liczbę: ";
+	std::cin >> number;
+
+	std::cout << "Czynniki pierwsze liczby " << number << ": ";
+
+	int k = 2; //ustawiamy k na pierwszą liczbę pierwszą
+
+	//rozkład liczby na czynniki pierwsze
+	while (number > 1)
+	{
+		while (number % k == 0) //dopóki liczba jest podzielna przez k
+		{
+			std::cout << k << ", ";
+			number /= k;
+		}
+		++k;
+	}
+}
 
 //Oblicz sumę szeregu 1/1^2 + 1/2^2 + 1/3^2 + ... +1/n^2. Jeżeli się nie pomylisz, to dla odpowiednio dużej wartości n po przemnożeniu 
 //jej przez 6 i spierwiastkowaniu powinieneś otrzymać wartość liczby π (suma szeregu jest równa π2/6). Zwróć uwagę, że pierwsza 
@@ -221,6 +243,5 @@ void task14()
 int main()
 {
     setlocale(LC_CTYPE, "polish");
-	task14();
+	task15();
 }
-
