@@ -212,7 +212,7 @@ void task14()
 	std::cout << "\n122333\n 223334444\n 333444455555\n 444455555666666";
 }
 
-//Napisz program który rozłoży liczbę na czynniki pierwsze
+//Napisz program który rozłoży liczbę na czynniki pierwsze.
 void task15()
 {
 	int number;
