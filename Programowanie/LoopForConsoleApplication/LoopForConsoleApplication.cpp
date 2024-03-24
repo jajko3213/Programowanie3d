@@ -222,17 +222,16 @@ void task15()
 
 	std::cout << "Czynniki pierwsze liczby " << number << ": ";
 
-	int k = 2; //ustawiamy k na pierwszą liczbę pierwszą
-
-	//rozkład liczby na czynniki pierwsze
+	int k = 2; 
+	
 	while (number > 1)
 	{
-		while (number % k == 0) //dopóki liczba jest podzielna przez k
+		while (number % k == 0) 
 		{
 			std::cout << k << ", ";
 			number /= k;
 		}
-		++k;
+		k++;
 	}
 }
 
