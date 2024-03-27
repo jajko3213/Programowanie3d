@@ -27,4 +27,9 @@
       <Filter>Header Files\Photos</Filter>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CharacterConsoleApplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

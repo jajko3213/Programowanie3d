@@ -132,6 +132,9 @@
   <ItemGroup>
     <Image Include="0305_02.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CharacterConsoleApplication.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
