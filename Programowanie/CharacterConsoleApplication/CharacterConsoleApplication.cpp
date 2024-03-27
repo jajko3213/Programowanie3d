@@ -1,6 +1,6 @@
 #include <iostream>
 
-//Napisz program który pobierze znak od u¿ytkownika i wyœwieli go.
+//Napisz program który pobierze znak od u¿ytkownika i wyœwieli go
 void task1()
 {
     char characterFromUser;
