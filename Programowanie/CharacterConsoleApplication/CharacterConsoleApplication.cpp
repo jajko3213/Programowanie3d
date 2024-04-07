@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream>;
 
 //Napisz program który pobierze znak od u¿ytkownika i wyœwieli go
 void task1()
@@ -133,7 +133,37 @@ void task6()
 // i wyœwietla liczbê samog³osek i spó³g³osek w tym ci¹gu.
 void task7()
 {
+	std::string textFromUser;
+	std::cout << "Podaj tekst aby sprawdziæ w nim iloœæ spó³g³osek i samog³osek: \n";
+	std::cin >> textFromUser;
+	std::cout << "Podany tekst to: " << textFromUser << "\n";
 
+	int vowels = 0;
+	int consonants = 0;
+	int length = textFromUser.length();
+	for (int i = 0; i < length; i++)
+	{
+		if (textFromUser[i] == 'a' || 
+			textFromUser[i] == 'e' || 
+			textFromUser[i] == 'i' || 
+			textFromUser[i] == 'o' || 
+			textFromUser[i] == 'u' || 
+			textFromUser[i] == 'ó' || 
+			textFromUser[i] == 'y' ||
+			textFromUser[i] == 'A' ||
+			textFromUser[i] == 'E' ||
+			textFromUser[i] == 'I' ||
+			textFromUser[i] == 'O' ||
+			textFromUser[i] == 'U' ||
+			textFromUser[i] == 'Ó' ||
+			textFromUser[i] == 'Y')
+			vowels++;
+		else 
+			consonants++;
+	}
+
+	std::cout << "Samog³osek jest: " << vowels << "\n";
+	std::cout << "Spó³g³osek jest: " << consonants << "\n";
 }
 
 /*
@@ -146,5 +176,5 @@ void task7()
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-    task1();
+    task7();
 }
