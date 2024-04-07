@@ -143,7 +143,6 @@ void task7()
 * Program wyci¹gaj¹cy informacje z numeru PESEL
 * Program implementuj¹cy algorytm szyfrowania Cezara (proste szyfrowanie, w którym ka¿dy znak w tekœcie jest zastêpowany innym znakiem, przesuniêtym o sta³¹ liczbê pozycji w alfabecie).*/
 
-
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
