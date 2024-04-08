@@ -1,4 +1,4 @@
-#include <iostream>;
+#include <iostream>
 
 //Napisz program który pobierze znak od u¿ytkownika i wyœwieli go
 void task1()
@@ -179,11 +179,6 @@ void task8()
         reverseText = reverseText + textFromUser[i];
     }
 
-    /*for (int i = 0; i < textFromUser.length(); i++)
-    {
-        reverseText = textFromUser[i] + reverseText;
-    }*/
-    
     if (textFromUser == reverseText)
         std::cout << "Ten tekst jest palindromem\n";
     else
@@ -200,8 +195,15 @@ void task9()
 	int tmpNumber = number;
 	std::string binNumber = "";
 
-	int rest = tmpNumber % 2;
-	tmpNumber / 2;
+	do
+	{
+		int rest = tmpNumber % 2;
+		tmpNumber = tmpNumber / 2;
+		if (rest == 0)
+			binNumber = "0" + binNumber;
+		else
+			binNumber = "1" + binNumber;
+	} while (tmpNumber != 0);
 
 	std::cout << "Liczba " << number << " po konwersji na system binarny " << binNumber;
 }
@@ -216,5 +218,5 @@ void task9()
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-    task8();
+    task9();
 }
