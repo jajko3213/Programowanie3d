@@ -166,9 +166,49 @@ void task7()
 	std::cout << "Spó³g³osek jest: " << consonants << "\n";
 }
 
+//Program sprawdzaj¹cy czy podany ci¹g znaków jest palindromem (czyli takim, który czytany od ty³u jest taki sam, jak czytany od przodu, np. "kajak")
+void task8()
+{
+	std::string textFromUser;
+	std::cout << "Podaj tekst aby sprawdziæ czy jest palindromem\n";
+	std::cin >> textFromUser;
+
+	std::string reverseText = "";
+    for (int i = textFromUser.length() - 1; i >= 0; i--)
+    {
+        reverseText = reverseText + textFromUser[i];
+    }
+
+    /*for (int i = 0; i < textFromUser.length(); i++)
+    {
+        reverseText = textFromUser[i] + reverseText;
+    }*/
+    
+    if (textFromUser == reverseText)
+        std::cout << "Ten tekst jest palindromem\n";
+    else
+        std::cout << "Ten tekst nie jest palindromem\n";
+}
+
+//Poproœ u¿ytkownika o wprowadzenie liczby ca³kowitej w systemie dziesiêtnym. Nastêpnie skonwertuj tê liczbê na system dwójkowy (binarny) i wyœwietl wynik.
+void task9()
+{
+	int number;
+	std::cout << "Podaj liczbê: \n";
+	std::cin >> number;
+
+	int tmpNumber = number;
+	std::string binNumber = "";
+
+	int rest = tmpNumber % 2;
+	tmpNumber / 2;
+
+	std::cout << "Liczba " << number << " po konwersji na system binarny " << binNumber;
+}
+
 /*
-* Poproœ u¿ytkownika o wprowadzenie liczby ca³kowitej w systemie dziesiêtnym. Nastêpnie skonwertuj tê liczbê na system dwójkowy (binarny) i wyœwietl wynik.
-* Program sprawdzaj¹cy czy podany ci¹g znaków jest palindromem (czyli takim, który czytany od ty³u jest taki sam, jak czytany od przodu, np. "kajak")
+* 
+* 
 * Program sprawdzaj¹cy czy podane dwa s³owa s¹ anagramami (czyli takimi, które zawieraj¹ te same litery, ale w innym uk³adzie, np. "klasa" i "salka")
 * Program wyci¹gaj¹cy informacje z numeru PESEL
 * Program implementuj¹cy algorytm szyfrowania Cezara (proste szyfrowanie, w którym ka¿dy znak w tekœcie jest zastêpowany innym znakiem, przesuniêtym o sta³¹ liczbê pozycji w alfabecie).*/
@@ -176,5 +216,5 @@ void task7()
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-    task7();
+    task8();
 }
