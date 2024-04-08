@@ -173,7 +173,9 @@ void task8()
 	std::cout << "Podaj tekst aby sprawdziæ czy jest palindromem\n";
 	std::cin >> textFromUser;
 
-	std::string reverseText = "";
+	//Wersja 1
+
+	/*std::string reverseText = "";
     for (int i = textFromUser.length() - 1; i >= 0; i--)
     {
         reverseText = reverseText + textFromUser[i];
@@ -183,6 +185,24 @@ void task8()
         std::cout << "Ten tekst jest palindromem\n";
     else
         std::cout << "Ten tekst nie jest palindromem\n";
+	*/
+
+	//Wersja 2
+
+	bool isPalindrome = true;
+
+	for (int fromStart = 0, fromEnd = textFromUser.length() - 1; fromStart < fromEnd; fromStart++, fromEnd--)
+	{
+		if (textFromUser[fromStart] != textFromUser[fromEnd])
+		{
+			isPalindrome = false;
+			break;
+		}
+	}
+	if (isPalindrome == true)
+		std::cout << "Wyraz jest palindromem";
+	else
+		std::cout << "Wyraz nie jest palindromem";
 }
 
 //Poproœ u¿ytkownika o wprowadzenie liczby ca³kowitej w systemie dziesiêtnym. Nastêpnie skonwertuj tê liczbê na system dwójkowy (binarny) i wyœwietl wynik.
@@ -218,5 +238,5 @@ void task9()
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-    task9();
+    task8();
 }
