@@ -24,7 +24,6 @@ void task2()
 {
     const unsigned short ARRAY_NUMBER_SIZE = 100;
     
-
     int numbers[ARRAY_NUMBER_SIZE];
     for (int i = 1; i < ARRAY_NUMBER_SIZE; i++)
     {
@@ -46,9 +45,8 @@ void task2()
     }
     
     std::cout << "\n";
-
     std::cout << "Suma liczb parzystych tablicy wynosi: " << sum << "\n";
-    
+   
     int arithmeticMeanOfEvenNumbers = sum / counter;
 
     std::cout << "Œrednia arytmetyczna tych liczb wynosi: " << arithmeticMeanOfEvenNumbers;
