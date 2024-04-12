@@ -1,6 +1,5 @@
 #include <iostream>
 
-
 //Napisz program, który wczyta 5 liczb a nastêpnie wyœwietli je w odwrotnej kolejnoœci.
 void task1()
 {
