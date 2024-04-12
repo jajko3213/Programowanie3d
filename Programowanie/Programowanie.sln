@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Kolekcje", "03.Kolekcje"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CharacterConsoleApplication", "CharacterConsoleApplication\CharacterConsoleApplication.vcxproj", "{B42E9E16-C577-4225-BDEF-DC2FF77DA82B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ArrayConsoleApplication", "ArrayConsoleApplication\ArrayConsoleApplication.vcxproj", "{16A5E763-C875-4D82-8C2F-BF30ACA91D29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -87,6 +89,14 @@ Global
 		{B42E9E16-C577-4225-BDEF-DC2FF77DA82B}.Release|x64.Build.0 = Release|x64
 		{B42E9E16-C577-4225-BDEF-DC2FF77DA82B}.Release|x86.ActiveCfg = Release|Win32
 		{B42E9E16-C577-4225-BDEF-DC2FF77DA82B}.Release|x86.Build.0 = Release|Win32
+		{16A5E763-C875-4D82-8C2F-BF30ACA91D29}.Debug|x64.ActiveCfg = Debug|x64
+		{16A5E763-C875-4D82-8C2F-BF30ACA91D29}.Debug|x64.Build.0 = Debug|x64
+		{16A5E763-C875-4D82-8C2F-BF30ACA91D29}.Debug|x86.ActiveCfg = Debug|Win32
+		{16A5E763-C875-4D82-8C2F-BF30ACA91D29}.Debug|x86.Build.0 = Debug|Win32
+		{16A5E763-C875-4D82-8C2F-BF30ACA91D29}.Release|x64.ActiveCfg = Release|x64
+		{16A5E763-C875-4D82-8C2F-BF30ACA91D29}.Release|x64.Build.0 = Release|x64
+		{16A5E763-C875-4D82-8C2F-BF30ACA91D29}.Release|x86.ActiveCfg = Release|Win32
+		{16A5E763-C875-4D82-8C2F-BF30ACA91D29}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,6 +109,7 @@ Global
 		{0699A201-1F2A-405C-9FA5-2D72ECE2DC36} = {90416BDF-3471-418F-81F8-69D88EE6BC11}
 		{F76095D7-140E-4526-B926-4BFF2DE77E46} = {90416BDF-3471-418F-81F8-69D88EE6BC11}
 		{B42E9E16-C577-4225-BDEF-DC2FF77DA82B} = {9A540EB4-B093-40D3-A4A7-4B339327D064}
+		{16A5E763-C875-4D82-8C2F-BF30ACA91D29} = {9A540EB4-B093-40D3-A4A7-4B339327D064}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34C36E17-B9A8-4CB1-99CD-669B47983D88}
