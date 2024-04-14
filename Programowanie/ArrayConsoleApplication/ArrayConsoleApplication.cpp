@@ -88,7 +88,6 @@ void task3()
             else 
             {
                 std::cout << "Podana ocena jest w z³ej skali. Podaj ocenê z zakresu od 1 do 6.\n";
-         
             }
         }
     }
@@ -97,23 +96,8 @@ void task3()
     std::cout << "Twoja œrednia ocen z " + subjectFromUser <<  " wynosi: " << arithmeticAverage << "\n";
 }
 
-void task4()
-{
-    std::string text[7] = { "Poniedzia³ek", "Wtorek", "Œroda", "Czwartek", "Pi¹tek", "Sobota", "Niedziela"};
-    std::string textFromUser;
-    std::cin >> textFromUser;
-    if (textFromUser == text[1])
-    {
-        std::cout << "Prawid³owo\n";
-    }
-    else
-    {
-        std::cout << "Nieprawid³owo\n";
-    }
-}
-
 int main()
 {
     setlocale(LC_CTYPE, "polish");
-    task4();
+    task3();
 }
