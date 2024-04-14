@@ -97,8 +97,23 @@ void task3()
     std::cout << "Twoja œrednia ocen z " + subjectFromUser <<  " wynosi: " << arithmeticAverage << "\n";
 }
 
+void task4()
+{
+    std::string text[7] = { "Poniedzia³ek", "Wtorek", "Œroda", "Czwartek", "Pi¹tek", "Sobota", "Niedziela"};
+    std::string textFromUser;
+    std::cin >> textFromUser;
+    if (textFromUser == text[1])
+    {
+        std::cout << "Prawid³owo\n";
+    }
+    else
+    {
+        std::cout << "Nieprawid³owo\n";
+    }
+}
+
 int main()
 {
     setlocale(LC_CTYPE, "polish");
-    task3();
+    task4();
 }
