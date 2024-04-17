@@ -19,7 +19,7 @@ void task1()
     std::cout << "\n";
 }
 
-//Program, który wype³ni tablice (100 elementow¹) liczbami od 1 do 99, a nastêpnie obliczy sumê oraz œredni¹ liczb parzystych.
+//Program, który wype³ni tablice (100 elementow¹) kolejnymi liczbami od 1 do 99, a nastêpnie obliczy sumê oraz œredni¹ liczb parzystych.
 void task2()
 {
     const unsigned short ARRAY_NUMBER_SIZE = 100;
@@ -33,13 +33,12 @@ void task2()
 
     std::cout << "\n";
     
-    int sum = 0, counter = 0;
+    int sum = 0;
     for (int i = 1; i < ARRAY_NUMBER_SIZE; i++)
     {
         if (numbers[i] % 2 == 0)
         {
             sum = sum + numbers[i];
-            counter++;
         }
         
     }
@@ -47,7 +46,7 @@ void task2()
     std::cout << "\n";
     std::cout << "Suma liczb parzystych tablicy wynosi: " << sum << "\n";
    
-    int arithmeticMeanOfEvenNumbers = sum / counter;
+    int arithmeticMeanOfEvenNumbers = sum / ARRAY_NUMBER_SIZE;
 
     std::cout << "Œrednia arytmetyczna tych liczb wynosi: " << arithmeticMeanOfEvenNumbers;
 }
@@ -70,7 +69,7 @@ void task3()
 
     const unsigned int ARRAY_NUMBERS_SIZE = 10;
     int grades[ARRAY_NUMBERS_SIZE];
-    int sum = 0, counter = 0;
+    int sum = 0;
 
     for (int i = 0; i < ARRAY_NUMBERS_SIZE; i++) {
         bool grade = false;
@@ -83,7 +82,6 @@ void task3()
                 grade = true;
                 std::cout << "\n";
                 sum = sum + grades[i];
-                counter++;
             }
             else 
             {
@@ -92,8 +90,35 @@ void task3()
         }
     }
 
-    int arithmeticAverage = sum / counter;
+    int arithmeticAverage = sum / ARRAY_NUMBERS_SIZE;
     std::cout << "Twoja œrednia ocen z " + subjectFromUser <<  " wynosi: " << arithmeticAverage << "\n";
+}
+
+//Program obliczaj¹cy œredni¹ arytmetyczn¹ elementów w tablicy liczb ca³kowitych.
+void task4()
+{
+    const unsigned int ARRAY_NUMBER_SIZE = 5;
+
+    srand(time(NULL));
+
+    std::cout << "Liczby w kolekcji: \n";
+    int numbers[ARRAY_NUMBER_SIZE];
+    for (int i = 0; i < ARRAY_NUMBER_SIZE; i++)
+    {
+        numbers[i] = rand() % 101;
+        std::cout << numbers[i] << ", ";
+    }
+    std::cout << "\n\n";
+
+    int sum = 0;
+    for (int i = 0; i < ARRAY_NUMBER_SIZE; i++)
+    {
+        sum = sum + numbers[i];
+    }
+
+    int arithmeticAverage = sum / ARRAY_NUMBER_SIZE;
+
+    std::cout << "Œrednia arytmetyczna tych elementów tablicy wynosi: " << arithmeticAverage;
 }
 
 int main()
