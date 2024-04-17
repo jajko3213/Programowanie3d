@@ -46,7 +46,7 @@ void task2()
     std::cout << "\n";
     std::cout << "Suma liczb parzystych tablicy wynosi: " << sum << "\n";
    
-    int arithmeticMeanOfEvenNumbers = sum / ARRAY_NUMBER_SIZE;
+    double arithmeticMeanOfEvenNumbers = sum * 1.0/ ARRAY_NUMBER_SIZE;
 
     std::cout << "Œrednia arytmetyczna tych liczb wynosi: " << arithmeticMeanOfEvenNumbers;
 }
@@ -63,7 +63,7 @@ void task2()
 void task3()
 {
     std::cout << "Podaj swoje oceny z jednego dowolnego przedmiotu szkolnego, mo¿esz podaæ maksymalnie 10 ocen\n";
-    std::cout << "Napisz z jakiego przedmiotu obliczasz œredni¹. Napisz to w sposób np. historii, biologi, chemi, angielskiego itd.\n";
+    std::cout << "Napisz z jakiego przedmiotu obliczasz œredni¹. Napisz to w sposób np. historii, biologii, chemii, angielskiego itd.\n";
     std::string subjectFromUser;
     std::cin >> subjectFromUser;
 
@@ -90,7 +90,7 @@ void task3()
         }
     }
 
-    int arithmeticAverage = sum / ARRAY_NUMBERS_SIZE;
+    double arithmeticAverage = sum * 1.0 / ARRAY_NUMBERS_SIZE;
     std::cout << "Twoja œrednia ocen z " + subjectFromUser <<  " wynosi: " << arithmeticAverage << "\n";
 }
 
@@ -105,24 +105,24 @@ void task4()
     int numbers[ARRAY_NUMBER_SIZE];
     for (int i = 0; i < ARRAY_NUMBER_SIZE; i++)
     {
-        numbers[i] = rand() % 101;
+        numbers[i] = rand() % 11;
         std::cout << numbers[i] << ", ";
     }
     std::cout << "\n\n";
 
-    int sum = 0;
-    for (int i = 0; i < ARRAY_NUMBER_SIZE; i++)
+    int sum = numbers[0]; //przyspieszenie poprzez przypisanie sumie indeksu 0, co skraca pêtle. W poprzednch programach nie zastosowane.
+    for (int i = 1; i < ARRAY_NUMBER_SIZE; i++)
     {
         sum = sum + numbers[i];
     }
 
-    int arithmeticAverage = sum / ARRAY_NUMBER_SIZE;
+    double arithmeticAverage = sum * 1.0 / ARRAY_NUMBER_SIZE;
 
-    std::cout << "Œrednia arytmetyczna tych elementów tablicy wynosi: " << arithmeticAverage;
+    std::cout << "Œrednia arytmetyczna tych elementów tablicy wynosi: " << arithmeticAverage << "\n";
 }
 
 int main()
 {
     setlocale(LC_CTYPE, "polish");
-    task3();
+    task4();
 }
