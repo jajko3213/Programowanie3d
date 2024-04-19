@@ -124,7 +124,7 @@ void task4()
 //Program szukaj¹cy maksimum i minimum z tablicy wype³nionej liczbami pseudolosowymi;
 void task5()
 {
-    const unsigned int ARRAY_NUMBER_SIZE = 5;
+    const unsigned int ARRAY_NUMBER_SIZE = 100;
 
     srand(time(NULL));
 
@@ -137,8 +137,21 @@ void task5()
     }
     std::cout << "\n\n";
 
-    int max =
+    int max = numbers[0];
+    for (int i = 1; i < ARRAY_NUMBER_SIZE; i++)
+    {
+        if (numbers[i] > max)
+            max = numbers[i];
+    }
+    std::cout << "Maksymalna liczba pod wzglêdem wielkoœci w tablicy wynosi: " << max << "\n";
 
+    int min = numbers[0];
+    for (int i = 1; i < ARRAY_NUMBER_SIZE; i++)
+    {
+        if (numbers[i] < min)
+            min = numbers[i];
+    }
+    std::cout << "Najmniejsza liczba pod wzglêdem wielkoœci w tablicy wynosi: " << min << "\n";
 }
 
 int main()
