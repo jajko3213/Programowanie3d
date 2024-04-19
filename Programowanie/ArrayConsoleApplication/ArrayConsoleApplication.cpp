@@ -172,7 +172,6 @@ void task6()
      nameOfDay[4] = "Pi¹tek";
      nameOfDay[5] = "Sobota";
      nameOfDay[6] = "Niedziela";
-
     
     if (numberFromUser >= 0 && numberFromUser <= 6)
     {
