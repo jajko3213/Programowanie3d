@@ -175,7 +175,7 @@ void task6()
     
     if (numberFromUser >= 0 && numberFromUser <= 6)
     {
-        std::cout << "Nazwa dnia to: " << nameOfDay[numberFromUser] << "n";
+        std::cout << "Nazwa dnia to: " << nameOfDay[numberFromUser] << "\n";
     }
     else 
     {
@@ -186,5 +186,5 @@ void task6()
 int main()
 {
     setlocale(LC_CTYPE, "polish");
-    task5();
+    task6();
 }
