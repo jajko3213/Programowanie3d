@@ -157,6 +157,33 @@ void task5()
     std::cout << "Najmniejsza liczba pod wzglêdem wielkoœci w tablicy wynosi: " << min << "\n";
 }
 
+//Napisz program który wczyta numer dnia tygodnia, a nastêpnie wyœwietli nazwê tego dnia lub komunikat b³êdu.
+void task6()
+{
+    int numberFromUser;
+    std::cout << "Podaj numer dnia tygodnia: \n";
+    std::cin >> numberFromUser;
+
+    std::string nameOfDay[7];
+     nameOfDay[0] = "Poniedzia³ek";
+     nameOfDay[1] = "Wtorek";
+     nameOfDay[2] = "Œroda";
+     nameOfDay[3] = "Czwartek";
+     nameOfDay[4] = "Pi¹tek";
+     nameOfDay[5] = "Sobota";
+     nameOfDay[6] = "Niedziela";
+
+    
+    if (numberFromUser >= 0 && numberFromUser <= 6)
+    {
+        std::cout << "Nazwa dnia to: " << nameOfDay[numberFromUser] << "n";
+    }
+    else 
+    {
+        std::cout << "Nie ma takiego dnia\n";
+    }
+}
+
 int main()
 {
     setlocale(LC_CTYPE, "polish");
