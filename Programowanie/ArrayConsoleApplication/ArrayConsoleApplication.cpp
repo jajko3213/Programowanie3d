@@ -121,8 +121,28 @@ void task4()
     std::cout << "Œrednia arytmetyczna tych elementów tablicy wynosi: " << arithmeticAverage << "\n";
 }
 
+//Program szukaj¹cy maksimum i minimum z tablicy wype³nionej liczbami pseudolosowymi;
+void task5()
+{
+    const unsigned int ARRAY_NUMBER_SIZE = 5;
+
+    srand(time(NULL));
+
+    std::cout << "Liczby w kolekcji: \n";
+    int numbers[ARRAY_NUMBER_SIZE];
+    for (int i = 0; i < ARRAY_NUMBER_SIZE; i++)
+    {
+        numbers[i] = rand() % 101;
+        std::cout << numbers[i] << ", ";
+    }
+    std::cout << "\n\n";
+
+    int max =
+
+}
+
 int main()
 {
     setlocale(LC_CTYPE, "polish");
-    task4();
+    task5();
 }
