@@ -145,6 +145,9 @@ void task5()
     }
     std::cout << "Maksymalna liczba pod wzglêdem wielkoœci w tablicy wynosi: " << max << "\n";
 
+    //Algorytm uniwersalny, min i max przypisujemy index 0 z tablicy, poniewa¿ mamy pewnoœæ ¿e bêdzie indeks 0 oraz przestawiamy 
+    //"i" w pêtli na 1 bo nie ma sensu porównywaæ tego samego indeksu.
+
     int min = numbers[0];
     for (int i = 1; i < ARRAY_NUMBER_SIZE; i++)
     {
