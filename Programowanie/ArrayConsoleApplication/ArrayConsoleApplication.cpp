@@ -219,8 +219,45 @@ void task7()
     }
 }
 
+//Algorytm sortuj¹cy (b¹belkowy).
+void task8()
+{
+    const unsigned int ARRAY_NUMBER_SIZE = 10;
+
+    srand(time(NULL));
+
+    std::cout << "Liczby w kolekcji: \n";
+    int numbers[ARRAY_NUMBER_SIZE];
+    for (int i = 0; i < ARRAY_NUMBER_SIZE; i++)
+    {
+        numbers[i] = rand() % 100;
+        std::cout << numbers[i] << ", ";
+    }
+    std::cout << "\n\n";
+
+    for (int i = 0; i < ARRAY_NUMBER_SIZE - 1; i++)
+    {
+        for (int j = 0; j < ARRAY_NUMBER_SIZE - 1; j++)
+        {
+            if (numbers[j] > numbers[j + 1])
+            {
+                int tmp = numbers[j];
+                numbers[j] = numbers[j + 1];
+                numbers[j + 1] = tmp;
+            }
+        }
+       
+    }
+
+    std::cout << "Po sortowaniu:\n";
+    for (int i = 0; i < ARRAY_NUMBER_SIZE; i++)
+    {
+        std::cout << numbers[i] << ", ";
+    }
+}
+
 int main()
 {
     setlocale(LC_CTYPE, "polish");
-    task7();
+    task8();
 }
