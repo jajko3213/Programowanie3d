@@ -175,16 +175,52 @@ void task6()
     
     if (numberFromUser >= 0 && numberFromUser <= 6)
     {
-        std::cout << "Nazwa dnia to: " << nameOfDay[numberFromUser] << "\n";
+        std::cout << "Nazwa dnia to: " << nameOfDay[numberFromUser] << " \n";
     }
     else 
     {
-        std::cout << "Nie ma takiego dnia\n";
+        std::cout << "Nie ma takiego dnia \n";
+    }
+}
+
+//Algorytm sortuj¹cy (wyboru).
+void task7()
+{
+    const unsigned int ARRAY_NUMBER_SIZE = 10;
+
+    srand(time(NULL));
+
+    std::cout << "Liczby w kolekcji: \n";
+    int numbers[ARRAY_NUMBER_SIZE];
+    for (int i = 0; i < ARRAY_NUMBER_SIZE; i++)
+    {
+        numbers[i] = rand() % 100;
+        std::cout << numbers[i] << ", ";
+    }
+    std::cout << "\n\n";
+
+    for (int i = 0; i < ARRAY_NUMBER_SIZE - 1; i++)
+    {
+        int minIndex = i;
+        for (int j = i + 1; j < ARRAY_NUMBER_SIZE; j++)
+        {
+            if (numbers[j] < numbers[minIndex])
+                minIndex = j;
+        }
+        int tmp = numbers[i];
+        numbers[i] = numbers[minIndex];
+        numbers[minIndex] = tmp;
+    }
+
+    std::cout << "Po sortowaniu:\n";
+    for (int i = 0; i < ARRAY_NUMBER_SIZE; i++)
+    {
+        std::cout << numbers[i] << ", ";
     }
 }
 
 int main()
 {
     setlocale(LC_CTYPE, "polish");
-    task6();
+    task7();
 }
