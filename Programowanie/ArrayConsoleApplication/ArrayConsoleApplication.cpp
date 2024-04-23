@@ -254,6 +254,7 @@ void task8()
     {
         std::cout << numbers[i] << ", ";
     }
+    std::cout << "\n\n";
 }
 
 int main()
