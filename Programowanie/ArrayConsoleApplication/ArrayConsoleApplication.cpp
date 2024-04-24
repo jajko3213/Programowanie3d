@@ -246,7 +246,6 @@ void task8()
                 numbers[j + 1] = tmp;
             }
         }
-       
     }
 
     std::cout << "Po sortowaniu:\n";
@@ -254,7 +253,6 @@ void task8()
     {
         std::cout << numbers[i] << ", ";
     }
-    std::cout << "\n\n";
 }
 
 int main()
