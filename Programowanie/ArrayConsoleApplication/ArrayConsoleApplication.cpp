@@ -258,7 +258,7 @@ void task8()
 //Sito Eratostenesa
 void task9()
 {
-    const unsigned int ARRAY_NUMBER_SIZE = 50;
+    const unsigned int ARRAY_NUMBER_SIZE = 10000;
     bool sieve[ARRAY_NUMBER_SIZE];
 
     for (int i = 2; i < ARRAY_NUMBER_SIZE; i++)
@@ -280,12 +280,13 @@ void task9()
     std::cout << "Liczby pierwsze:\n";
     for (int i = 2; i < ARRAY_NUMBER_SIZE; i++)
     {
-        std::cout << i << ",";
+        if (sieve[i] == true)
+            std::cout << i << ",";
     }
 }
 
 int main()
 {
     setlocale(LC_CTYPE, "polish");
-    task8();
+    task9();
 }
