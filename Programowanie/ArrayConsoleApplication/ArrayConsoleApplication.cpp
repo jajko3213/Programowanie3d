@@ -255,6 +255,35 @@ void task8()
     }
 }
 
+//Sito Eratostenesa
+void task9()
+{
+    const unsigned int ARRAY_NUMBER_SIZE = 50;
+    bool sieve[ARRAY_NUMBER_SIZE];
+
+    for (int i = 2; i < ARRAY_NUMBER_SIZE; i++)
+    {
+        sieve[i] = true;
+    }
+
+    for (int i = 2; i < ARRAY_NUMBER_SIZE; i++)
+    {
+        if (sieve[i] == true)
+        {
+            for (int j = i + i; j < ARRAY_NUMBER_SIZE; j = j + i)
+            {
+                sieve[j] = false;
+            }
+        }
+    }
+
+    std::cout << "Liczby pierwsze:\n";
+    for (int i = 2; i < ARRAY_NUMBER_SIZE; i++)
+    {
+        std::cout << i << ",";
+    }
+}
+
 int main()
 {
     setlocale(LC_CTYPE, "polish");
