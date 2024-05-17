@@ -17,5 +17,5 @@ typZwracany nazwaFuncji(parametry)
 
 int main()
 {
-  
+	setlocale(LC_CTYPE, "polish");
 }
