@@ -34,6 +34,11 @@ void showWelcome(std::string n)
 	std::cout << "Witaj " << n << "\n";
 }
 
+void showWelcomeAndAge(std::string n, int w)
+{
+	std::cout << "Witaj " << n << ". Wiek tej osoby to: " << w << " lat." << "\n";
+}
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
@@ -49,4 +54,7 @@ int main()
 	name = "Jan";
 	showWelcome(name);
 	showWelcome("Anna");
+	int age = 10;
+	//kolejnoœæ parametrów, kolejnoœæ deklaracji
+	showWelcomeAndAge("Damian", age);
 }
