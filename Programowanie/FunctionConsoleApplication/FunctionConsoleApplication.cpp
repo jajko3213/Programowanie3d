@@ -1,7 +1,6 @@
 #include <iostream>
 
 /*
-
 Funkcja - zbiór instrukcji. Definicja/deklaracja funkcji sk³ada siê z dwóch czêœci:
 * nagówek - sposób u¿ycia funkcji
 	- typ zwracany
@@ -15,7 +14,13 @@ typZwracany nazwaFuncji(parametry)
 }
 */
 
+void showHello()
+{
+	std::cout << "Hello World";
+}
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
+	showHello();
 }
