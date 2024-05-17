@@ -258,7 +258,7 @@ void task8()
 //Sito Eratostenesa
 void task9()
 {
-    const unsigned int ARRAY_NUMBER_SIZE = 10000;
+    const unsigned int ARRAY_NUMBER_SIZE = 50;
     bool sieve[ARRAY_NUMBER_SIZE];
 
     for (int i = 2; i < ARRAY_NUMBER_SIZE; i++)
