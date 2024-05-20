@@ -45,9 +45,17 @@ void showWelcome(std::string n, int w, std::string a)
 	std::cout << "Adres to: " << a << "\n";
 }
 
+void parameterTest(int& p) //przez referencje, jeœli by³oby przez wartoœæ to wartoœæ variable po wykonaniu funkcji wynosi³a by dalej 5
+{
+	std::cout << "Wartoœæ parametru: " << p << "\n";
+	p++;
+	std::cout << "Wartoœæ parametru: " << p << "\n";
+}
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
+	/*
 	showHello();
 	//jakiœ kod
 	showHello();
@@ -62,7 +70,9 @@ int main()
 	showWelcome("Anna");
 	int age = 10;
 	showWelcome("Damian", age, "ul.Krakowska 1");
-	//kolejnoœæ parametrów, kolejnoœæ deklaracji w funkcji np. void showWelcomeAndAge(std::string n, int w)
+	*/
+
+	//kolejnoœæ parametrów, kolejnoœæ deklaracji w funkcji np. void showWelcomeAndAge(std::string n, int w) -> "dasd", 4
 	//przeci¹¿enie funkcji - ta sama nazwa funkcji ró¿nica w parametrach
 	//dodanie przestrzeni
 	/*
@@ -73,5 +83,15 @@ int main()
 		odwo³anie sie do ptzestrzeni nazwaPrzestrzeni::funkcja();
 		jeœli s¹ w sobie namespace to wtedy p1::p2::funkcja();
 		p1 - przestrzeñ 1
+
+		przekazanie do parametru przez wartoœæ lub referencje czyli odwo³anie aby u¿yæ referencji nale¿y u¿yæ typ& nazwa parametru
+		referencja = przekazanie orygina³u 
+		wartoœæ = kopia
+		sta³ej nie przeka¿e przez referencje
 	*/
+
+	int variable = 5;
+	std::cout << "Wartoœæ zmiennej przed funkcj¹: " << variable << "\n";
+	parameterTest(variable);
+	std::cout << "Wartoœæ zmiennej po funkcji: " << variable << "\n";
 }
