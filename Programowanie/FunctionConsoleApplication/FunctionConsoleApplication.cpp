@@ -52,6 +52,13 @@ void parameterTest(int& p) //przez referencje, jeœli by³oby przez wartoœæ to war
 	std::cout << "Wartoœæ parametru: " << p << "\n";
 }
 
+int sum(int firstNumber, int secondNumber)
+{
+	int r;
+	r = firstNumber + secondNumber;
+	return r;
+}
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
@@ -88,10 +95,15 @@ int main()
 		referencja = przekazanie orygina³u 
 		wartoœæ = kopia
 		sta³ej nie przeka¿e przez referencje
+		zwracanie przez parametr wyniku
 	*/
 
 	int variable = 5;
 	std::cout << "Wartoœæ zmiennej przed funkcj¹: " << variable << "\n";
 	parameterTest(variable);
 	std::cout << "Wartoœæ zmiennej po funkcji: " << variable << "\n";
+
+	int result;
+	result = sum(15, 7) + 2;
+	std::cout << "Wynik sumowania to : " << result << "\n";
 }
