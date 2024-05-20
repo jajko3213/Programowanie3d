@@ -34,9 +34,15 @@ void showWelcome(std::string n)
 	std::cout << "Witaj " << n << "\n";
 }
 
-void showWelcomeAndAge(std::string n, int w)
+void showWelcome(std::string n, int w)
 {
 	std::cout << "Witaj " << n << ". Wiek tej osoby to: " << w << " lat." << "\n";
+}
+
+void showWelcome(std::string n, int w, std::string a)
+{
+	showWelcome(n, w);
+	std::cout << "Adres to: " << a << "\n";
 }
 
 int main()
@@ -55,6 +61,17 @@ int main()
 	showWelcome(name);
 	showWelcome("Anna");
 	int age = 10;
-	//kolejnoœæ parametrów, kolejnoœæ deklaracji
-	showWelcomeAndAge("Damian", age);
+	showWelcome("Damian", age, "ul.Krakowska 1");
+	//kolejnoœæ parametrów, kolejnoœæ deklaracji w funkcji np. void showWelcomeAndAge(std::string n, int w)
+	//przeci¹¿enie funkcji - ta sama nazwa funkcji ró¿nica w parametrach
+	//dodanie przestrzeni
+	/*
+		namespace nazwaPrzestrzeni
+		{
+			np.funkcja
+		}
+		odwo³anie sie do ptzestrzeni nazwaPrzestrzeni::funkcja();
+		jeœli s¹ w sobie namespace to wtedy p1::p2::funkcja();
+		p1 - przestrzeñ 1
+	*/
 }
