@@ -97,6 +97,13 @@ int main()
 		sta³ej nie przeka¿e przez referencje
 		zwracanie przez parametr wyniku
 	*/
+/* Zasady
+	DRY - don't repeat yourself - nie powtarzaj siê
+	KISS - Keept it simple, stupid - trzymaj prostotê g³upcze
+	YAGNI - you aren't gonna need it - nie potrzebujesz tego
+	SOLID
+	S - single responsibility - pojedyñcza odpowiedzialnoœæ
+*/
 
 	int variable = 5;
 	std::cout << "Wartoœæ zmiennej przed funkcj¹: " << variable << "\n";
