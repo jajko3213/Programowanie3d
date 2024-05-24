@@ -108,7 +108,7 @@ int main()
 		zwracanie przez parametr wyniku
 	*/
 /* Zasady
-	DRY - don't repeat yourself - nie powtarzaj siê
+	DRY - don't repeat yourself - nie powtarzaj siê.
 	KISS - Keept it simple, stupid - trzymaj prostotê g³upcze
 	YAGNI - you aren't gonna need it - nie potrzebujesz tego
 	SOLID
