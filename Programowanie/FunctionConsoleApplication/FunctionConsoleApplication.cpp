@@ -69,9 +69,20 @@ unsigned long long strong(int n)
 	return s;
 }
 
+unsigned long long strongv2(int n)
+{
+	unsigned long long s = 1;
+	if (n <= 1)
+		s = 1;
+	else
+		s = n * strongv2(n - 1);
+	return s;
+}
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
+
 	/*
 	showHello();
 	//jakiœ kod
@@ -92,6 +103,7 @@ int main()
 	//kolejnoœæ parametrów, kolejnoœæ deklaracji w funkcji np. void showWelcomeAndAge(std::string n, int w) -> "dasd", 4
 	//przeci¹¿enie funkcji - ta sama nazwa funkcji ró¿nica w parametrach
 	//dodanie przestrzeni
+
 	/*
 		namespace nazwaPrzestrzeni
 		{
@@ -107,13 +119,15 @@ int main()
 		sta³ej nie przeka¿e przez referencje
 		zwracanie przez parametr wyniku
 	*/
-/* Zasady
-	DRY - don't repeat yourself - nie powtarzaj siê
-	KISS - Keept it simple, stupid - trzymaj prostotê g³upcze
-	YAGNI - you aren't gonna need it - nie potrzebujesz tego
-	SOLID
-	S - single responsibility - pojedyñcza odpowiedzialnoœæ
-*/
+
+	/* Zasady
+		DRY - don't repeat yourself - nie powtarzaj siê
+		KISS - Keept it simple, stupid - trzymaj prostotê g³upcze
+		YAGNI - you aren't gonna need it - nie potrzebujesz tego
+		SOLID
+		S - single responsibility - pojedyñcza odpowiedzialnoœæ
+	*/
+
 	/*
 	int variable = 5;
 	std::cout << "Wartoœæ zmiennej przed funkcj¹: " << variable << "\n";
@@ -124,5 +138,9 @@ int main()
 	result = sum(15, 7) + 2;
 	std::cout << "Wynik sumowania to : " << result << "\n";
 	*/
-	std::cout << "Silnia z 5 wynosi: " << strong(5) << "\n";
+
+	int silnia;
+	std::cout << "Podaj z jakiej liczby chcesz uzyskaæ silnie\n";
+	std::cin >> silnia;
+	std::cout << "Silnia z " << silnia << " wynosi: " << strongv2(silnia) << "\n";
 }
