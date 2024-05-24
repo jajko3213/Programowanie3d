@@ -59,6 +59,16 @@ int sum(int firstNumber, int secondNumber)
 	return r;
 }
 
+unsigned long long strong(int n)
+{
+	unsigned long long s = 1;
+	for (int i = 1; i <= n; i++)
+	{
+		s = s * i;
+	}
+	return s;
+}
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
@@ -104,7 +114,7 @@ int main()
 	SOLID
 	S - single responsibility - pojedyñcza odpowiedzialnoœæ
 */
-
+	/*
 	int variable = 5;
 	std::cout << "Wartoœæ zmiennej przed funkcj¹: " << variable << "\n";
 	parameterTest(variable);
@@ -113,4 +123,6 @@ int main()
 	int result;
 	result = sum(15, 7) + 2;
 	std::cout << "Wynik sumowania to : " << result << "\n";
+	*/
+	std::cout << "Silnia z 5 wynosi: " << strong(5) << "\n";
 }
