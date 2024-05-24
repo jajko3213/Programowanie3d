@@ -140,7 +140,7 @@ int main()
 	*/
 
 	int silnia;
-	std::cout << "Podaj z jakiej liczby chcesz uzyskaæ silnie\n";
+	std::cout << "Podaj z jakiej liczby chcesz uzyskaæ silnie.\n";
 	std::cin >> silnia;
 	std::cout << "Silnia z " << silnia << " wynosi: " << strongv2(silnia) << "\n";
 }
