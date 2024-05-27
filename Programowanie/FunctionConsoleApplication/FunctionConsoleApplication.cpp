@@ -69,13 +69,14 @@ unsigned long long strong(int n)
 	return s;
 }
 
+//algorytm rekurencyjny
 unsigned long long strongv2(int n)
 {
 	unsigned long long s = 1;
 	if (n <= 1)
 		s = 1;
 	else
-		s = n * strongv2(n - 1);
+		s = n * strongv2(n - 1); 
 	return s;
 }
 
