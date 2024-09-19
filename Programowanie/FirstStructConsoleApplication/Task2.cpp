@@ -1,6 +1,13 @@
 #include <iostream>
 
 //Napisz program, który pobierze wspó³rzêdne 2D i obliczy jak daleko jest ten punkt od œrodka uk³adu wspó³rzêdnych
+
+struct point
+{
+	double x;
+	double y;
+};
+
 void getCoordinate(double& x, double& y)
 {
 	std::cout << "Podaj wspó³rzêdn¹ x:\n";
@@ -12,7 +19,9 @@ void getCoordinate(double& x, double& y)
 
 void task1()
 {
-	double x, y;
+	point firstPoint;
+	firstPoint.x = 5;
+	firstPoint.y = 5;
 
 	getCoordinate(x, y);
 

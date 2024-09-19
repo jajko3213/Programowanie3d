@@ -128,9 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FirstStructConsoleApplication.cpp" />
+    <ClCompile Include="Task2.cpp" />
     <ClCompile Include="Task1.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Tasks.h" />
     <ClInclude Include="Tasks.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
