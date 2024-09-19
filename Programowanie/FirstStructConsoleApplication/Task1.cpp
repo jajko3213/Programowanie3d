@@ -10,7 +10,7 @@ void getCoordinate(double& x, double& y)
 	std::cin >> y;
 }
 
-void task1()
+void task()
 {
 	double x, y;
 

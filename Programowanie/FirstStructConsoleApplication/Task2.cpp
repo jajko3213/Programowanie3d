@@ -20,12 +20,12 @@ void getCoordinate(double& x, double& y)
 void task1()
 {
 	point firstPoint;
-	firstPoint.x = 5;
-	firstPoint.y = 5;
+	//firstPoint.x = 5;
+	//firstPoint.y = 5;
 
-	getCoordinate(x, y);
+	getCoordinate(firstPoint.x, firstPoint.y);
 
-	double distance = sqrt(x * x + y * y);
+	double distance = sqrt(firstPoint.x * firstPoint.x + firstPoint.y * firstPoint.y);
 
 	std::cout << "Odleg³oœæ od œrodka to: " << distance;
 }
