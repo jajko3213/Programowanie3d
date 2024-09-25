@@ -4,5 +4,6 @@
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-	task2Namespace::task2();
+	//task2Namespace::task2();
+	task3();
 }

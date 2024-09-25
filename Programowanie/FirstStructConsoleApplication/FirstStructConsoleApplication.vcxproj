@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FirstStructConsoleApplication.cpp" />
+    <ClCompile Include="Task3.cpp" />
     <ClCompile Include="Task2.cpp" />
     <ClCompile Include="Task1.cpp" />
   </ItemGroup>
