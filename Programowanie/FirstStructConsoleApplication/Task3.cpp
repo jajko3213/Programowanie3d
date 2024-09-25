@@ -16,7 +16,14 @@ void accountInformation(bankAccount &account)
 
 void depositToAccount(bankAccount& account, double amount)
 {
+	amount = abs(amount);
 	account.balance = account.balance + amount;
+}
+
+void widthDrawFromAccount(bankAccount& account, double amount)
+{
+	amount = abs(amount);
+	account.balance = account.balance - amount;
 }
 
 void task3()
@@ -27,7 +34,9 @@ void task3()
 	firstAccount.currency = "z³";
 
 	accountInformation(firstAccount);
+
 	depositToAccount(firstAccount, 500);
+
 	accountInformation(firstAccount);
 
 
@@ -35,6 +44,10 @@ void task3()
 	secondAccount.balance = 15000;
 	secondAccount.owner = "Ewa Kowalska";
 	secondAccount.currency = "z³";
+
+	accountInformation(secondAccount);
+
+	widthDrawFromAccount(secondAccount, 500);
 
 	accountInformation(secondAccount);
 }
