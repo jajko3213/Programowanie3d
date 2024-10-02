@@ -1,6 +1,6 @@
 #include <iostream>
 
-struct bankAccount
+class bankAccount
 {
 	double balance; // stan konta
 	std::string owner; //w³aœciciel
