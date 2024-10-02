@@ -39,5 +39,32 @@ void transferBetweenAccounts(bankAccount& sourceAccount, bankAccount& targetAcco
 
 int main()
 {
-    
+	setlocale(LC_CTYPE, "polish");
+	bankAccount firstAccount;
+	firstAccount.balance = 10000;
+	firstAccount.owner = "Jan Kowalski";
+	firstAccount.currency = "z³";
+
+	accountInformation(firstAccount);
+
+	depositToAccount(firstAccount, 500);
+
+	accountInformation(firstAccount);
+
+
+	bankAccount secondAccount;
+	secondAccount.balance = 15000;
+	secondAccount.owner = "Ewa Kowalska";
+	secondAccount.currency = "z³";
+
+	accountInformation(secondAccount);
+
+	widthDrawFromAccount(secondAccount, 500);
+
+	accountInformation(secondAccount);
+
+	transferBetweenAccounts(secondAccount, firstAccount, 1000);
+
+	accountInformation(firstAccount);
+	accountInformation(secondAccount);
 }
