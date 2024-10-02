@@ -66,5 +66,4 @@ void task3()
 
 	accountInformation(firstAccount);
 	accountInformation(secondAccount);
-
 }
