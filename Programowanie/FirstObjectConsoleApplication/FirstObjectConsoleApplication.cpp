@@ -13,13 +13,13 @@ public:
 		std::cout << "W³aœciciel: " << owner << "\n";
 		std::cout << "Saldo: " << balance << " " << currency << "\n\n";
 	}
-};
 
-void depositToAccount(BankAccount& account, double amount)
-{
-	amount = abs(amount);
-	account.balance = account.balance + amount;
-}
+	void DepositToAccount(double amount)
+	{
+		amount = abs(amount);
+		balance = balance + amount;
+	}
+};
 
 bool widthDrawFromAccount(BankAccount& account, double amount)
 {
@@ -36,7 +36,7 @@ bool widthDrawFromAccount(BankAccount& account, double amount)
 void transferBetweenAccounts(BankAccount& sourceAccount, BankAccount& targetAccount, double amount)
 {
 	if (widthDrawFromAccount(sourceAccount, amount) == true)
-		depositToAccount(targetAccount, amount);
+		targetAccount.DepositToAccount(amount);
 }
 
 int main()
@@ -50,7 +50,8 @@ int main()
 	firstAccount.AccountInformation();
 	//accountInformation(firstAccount);
 
-	depositToAccount(firstAccount, 500);
+	firstAccount.DepositToAccount(500);
+	//depositToAccount(firstAccount, 500);
 
 	firstAccount.AccountInformation();
 
