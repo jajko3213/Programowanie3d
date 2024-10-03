@@ -68,5 +68,5 @@ int main()
 	transferBetweenAccounts(secondAccount, firstAccount, 1000);
 
 	firstAccount.AccountInformation();
-	secondAccount.AccountInformation();
+	secondAccount.AccountInformation();  
 }
