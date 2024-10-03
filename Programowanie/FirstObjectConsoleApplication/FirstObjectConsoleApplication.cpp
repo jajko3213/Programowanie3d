@@ -1,37 +1,39 @@
 #include <iostream>
 
-class bankAccount
+class BankAccount
 {
+public:
 	double balance; // stan konta
 	std::string owner; //w³aœciciel
 	std::string currency; // waluta
+
+	void AccountInformation()
+	{
+		std::cout << "Informacje o koncie bankowym.\n";
+		std::cout << "W³aœciciel: " << owner << "\n";
+		std::cout << "Saldo: " << balance << " " << currency << "\n\n";
+	}
 };
 
-void accountInformation(bankAccount& account)
-{
-	std::cout << "Informacje o koncie bankowym.\n";
-	std::cout << "W³aœciciel: " << account.owner << "\n";
-	std::cout << "Saldo: " << account.balance << " " << account.currency << "\n\n";
-}
-
-void depositToAccount(bankAccount& account, double amount)
+void depositToAccount(BankAccount& account, double amount)
 {
 	amount = abs(amount);
 	account.balance = account.balance + amount;
 }
 
-bool widthDrawFromAccount(bankAccount& account, double amount)
+bool widthDrawFromAccount(BankAccount& account, double amount)
 {
 	amount = abs(amount);
 	if (account.balance - amount >= 0)
 	{
+
 		account.balance = account.balance - amount;
 		return true;
 	}
 	return false;
 }
 
-void transferBetweenAccounts(bankAccount& sourceAccount, bankAccount& targetAccount, double amount)
+void transferBetweenAccounts(BankAccount& sourceAccount, BankAccount& targetAccount, double amount)
 {
 	if (widthDrawFromAccount(sourceAccount, amount) == true)
 		depositToAccount(targetAccount, amount);
@@ -40,31 +42,31 @@ void transferBetweenAccounts(bankAccount& sourceAccount, bankAccount& targetAcco
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-	bankAccount firstAccount;
+	BankAccount firstAccount;
 	firstAccount.balance = 10000;
 	firstAccount.owner = "Jan Kowalski";
 	firstAccount.currency = "z³";
-
-	accountInformation(firstAccount);
+	
+	firstAccount.AccountInformation();
+	//accountInformation(firstAccount);
 
 	depositToAccount(firstAccount, 500);
 
-	accountInformation(firstAccount);
+	firstAccount.AccountInformation();
 
-
-	bankAccount secondAccount;
+	BankAccount secondAccount;
 	secondAccount.balance = 15000;
 	secondAccount.owner = "Ewa Kowalska";
 	secondAccount.currency = "z³";
 
-	accountInformation(secondAccount);
+	secondAccount.AccountInformation();
 
 	widthDrawFromAccount(secondAccount, 500);
 
-	accountInformation(secondAccount);
+	secondAccount.AccountInformation();
 
 	transferBetweenAccounts(secondAccount, firstAccount, 1000);
 
-	accountInformation(firstAccount);
-	accountInformation(secondAccount);
+	firstAccount.AccountInformation();
+	secondAccount.AccountInformation();
 }
