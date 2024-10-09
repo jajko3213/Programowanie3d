@@ -19,25 +19,27 @@ public:
 		amount = abs(amount);
 		balance = balance + amount;
 	}
+
+	bool WidthDrawFromAccount(double amount)
+	{
+		amount = abs(amount);
+		if (balance - amount >= 0)
+		{
+
+			balance = balance - amount;
+			return true;
+		}
+		return false;
+	}
+
+	void TransferBetweenAccounts(BankAccount& targetAccount, double amount)
+	{
+		if (WidthDrawFromAccount(amount) == true)
+			targetAccount.DepositToAccount(amount);
+	}
 };
 
-bool widthDrawFromAccount(BankAccount& account, double amount)
-{
-	amount = abs(amount);
-	if (account.balance - amount >= 0)
-	{
 
-		account.balance = account.balance - amount;
-		return true;
-	}
-	return false;
-}
-
-void transferBetweenAccounts(BankAccount& sourceAccount, BankAccount& targetAccount, double amount)
-{
-	if (widthDrawFromAccount(sourceAccount, amount) == true)
-		targetAccount.DepositToAccount(amount);
-}
 
 int main()
 {
@@ -62,12 +64,13 @@ int main()
 
 	secondAccount.AccountInformation();
 
-	widthDrawFromAccount(secondAccount, 500);
+	secondAccount.WidthDrawFromAccount(500);
 
 	secondAccount.AccountInformation();
 
-	transferBetweenAccounts(secondAccount, firstAccount, 1000);
+	secondAccount.TransferBetweenAccounts(firstAccount, 1000);
 
 	firstAccount.AccountInformation();
+
 	secondAccount.AccountInformation();  
 }
