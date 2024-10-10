@@ -47,7 +47,6 @@ class NazwaKlasy
 
 };
 
-
 Nie ma ju¿ potrzeby odwo³ywaæ siê do konkretnego pola w metodzie, poniewa¿ jest ona wywo³ywana w 
 kontekœcie odpowiedniego obiektu. Aby daæ znaæ, ¿e metoda jest metod¹ a nie funkcj¹ piszemy w 
 oddzielnym pliku gdzie znajduje siê cia³o metody dla przyk³adu tak:
