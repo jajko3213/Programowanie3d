@@ -91,7 +91,7 @@ int main()
 
 Nazwê struktury piszemy z ma³ej litery jak i nazwê funkcji. Aby utworzyæ strukturê piszemy:
 
-struct nazwa Struktury
+struct nazwaStruktury
 {
 //kod
 };
