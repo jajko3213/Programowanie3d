@@ -57,7 +57,7 @@ void NazwaKlasy::NazwaMetody
 
 }
 
-Nie ma ju¿ potrzeby odwo³ywaæ siê do konkretnego pola w metodzie, poniewa¿ jest ona wywo³ywana w
+Nie ma ju¿ potrzeby odwo³ywaæ siê do konkretnego pola w typie podczas wywo³ywania metody, poniewa¿ jest ona wywo³ywana w
 kontekœcie odpowiedniego obiektu.Przyk³ad:
 
 void BankAccount::Information()
