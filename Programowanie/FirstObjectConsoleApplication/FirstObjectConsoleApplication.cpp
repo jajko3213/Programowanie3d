@@ -48,7 +48,7 @@ class NazwaKlasy
 };
 
 Aby daæ znaæ, ¿e metoda jest metod¹ a nie funkcj¹ piszemy w 
-oddzielnym pliku gdzie znajduje siê cia³o metody dla przyk³adu tak:
+oddzielnym pliku gdzie znajduje siê cia³o metody dla przyk³adu tak (metoda zawarta w klasie):
 
 void NazwaKlasy::NazwaMetody
 {
