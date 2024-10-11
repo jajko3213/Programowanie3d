@@ -36,7 +36,7 @@ int main()
 }
 
 /*
-Dane s¹ buforowane kiedy bufor siê przepe³ni wysy³a dane do pliku.
+Dane s¹ buforowane, kiedy bufor siê przepe³ni wysy³a dane do pliku.
 Metoda flush wymusza opró¿nienie bufora.
 */
 
