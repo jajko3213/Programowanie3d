@@ -21,7 +21,6 @@ void task1()
         writeInFile << "\n";
         writeInFile.flush();
         writeInFile << age << "\n";
-        
 
         writeInFile.close();
     }
