@@ -37,7 +37,7 @@ int main()
 
 /*
 Dane s¹ buforowane, kiedy bufor siê przepe³ni wysy³a dane do pliku.
-Metoda flush wymusza opró¿nienie bufora (bufor sam sie oprózni bez wywo³ywania tej metody).
+Metoda flush wymusza opró¿nienie bufora (bufor sam sie opró¿ni bez wywo³ywania tej metody).
 */
 
 
