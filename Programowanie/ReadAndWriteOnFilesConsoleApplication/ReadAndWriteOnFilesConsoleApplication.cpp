@@ -37,11 +37,14 @@ void task2()
     readFromFile.open("c:\\dane.txt");
     if (readFromFile.is_open())
     {
-        readFromFile >> name;
-        readFromFile >> age;
+        while (readFromFile.eof() == false)
+        { 
+            readFromFile >> name;
+            readFromFile >> age;
 
-        std::cout << "Imie: " << name << " ,wiek: " << age << "\n";
-        readFromFile.close();
+            std::cout << "Imie: " << name << " ,wiek: " << age << "\n";
+            readFromFile.close();
+        }
     }
 }
 
