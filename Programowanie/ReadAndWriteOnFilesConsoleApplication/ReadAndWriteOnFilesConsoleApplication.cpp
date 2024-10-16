@@ -58,6 +58,7 @@ int main()
 Dane s¹ buforowane, kiedy bufor siê przepe³ni wysy³a dane do pliku.
 Metoda flush wymusza opró¿nienie bufora.
 Metoda close wywo³uje metode flush.
+Kartkówka z tego materia³u 17.10.2024.
 */
 
 
