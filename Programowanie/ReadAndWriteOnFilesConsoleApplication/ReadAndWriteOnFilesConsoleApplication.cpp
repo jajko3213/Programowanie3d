@@ -48,10 +48,77 @@ void task2()
     }
 }
 
+//Program zapisuj¹cy do pliku imie, drugie imie, Nazwisko i wiek. Po drugim imieniu ma opró¿niæ bufor.
+void task3()
+{
+    std::string name;
+    std::string secondName;
+    std::string surname;
+    int age;
+    
+    std::cout << "Podaj swoje imiê:\n";
+    std::cin >> name;
+
+    std::cout << "Podaj swoje drugie imiê:\n";
+    std::cin >> secondName;
+
+    std::cout << "Podaj swoje nazwisko imiê:\n";
+    std::cin >> surname;
+
+    std::cout << "Podaj swój wiek:\n";
+    std::cin >> age;
+
+    std::ofstream writeInFile;
+    writeInFile.open("C:\\Users\dawid\Desktop\dane.txt", std::ios::app);
+    if (writeInFile.is_open() == true)
+    {
+        writeInFile << name;
+        writeInFile << "\n";
+        writeInFile << secondName;
+        writeInFile << "\n";
+        writeInFile.flush();
+        writeInFile << surname;
+        writeInFile << "\n";
+        writeInFile << age;
+
+        writeInFile.close();
+    }
+    else
+        std::cout << "PROBLEM!!!";
+}
+
+//Program odczytuj¹cy dane z pliku i wyœwietli je.
+void task4()
+{
+    std::string name;
+    std::string secondName;
+    std::string surname;
+    int age;
+
+    std::ifstream readFromFile;
+    readFromFile.open("C:\\Users\dawid\Desktop\dane.txt");
+    if (readFromFile.is_open() == true)
+    {
+        while (readFromFile.eof() == false)
+        {
+            readFromFile >> name;
+            readFromFile >> secondName;
+            readFromFile >> surname;
+            readFromFile >> age;
+
+            std::cout << "Masz na imiê: " << name << ", twoje drugie imiê to: " << secondName << " na nazwisko masz: " << surname << " twój wiek to: " << age << "\n";
+
+            readFromFile.close();
+        }
+    }
+    else
+        std::cout << "PROBLEM!!!";
+}
+
 int main()
 {
     setlocale(LC_CTYPE, "polish");
-    task2();
+    task4();
 }
 
 /*
