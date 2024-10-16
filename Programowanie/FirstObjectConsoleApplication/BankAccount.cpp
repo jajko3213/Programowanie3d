@@ -5,7 +5,7 @@ void BankAccount::AccountInformation()
 {
 	std::cout << "Informacje o koncie bankowym.\n";
 	std::cout << "W³aœciciel: " << owner << "\n";
-	std::cout << "Saldo: " << balance << " " << currency << "\n\n";
+	std::cout << "Saldo: " << balance << " " << currency << "\n\n"; 
 }
 
 void BankAccount::DepositToAccount(double amount)
