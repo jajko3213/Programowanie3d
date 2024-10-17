@@ -115,10 +115,51 @@ void task4()
         std::cout << "PROBLEM!!!";
 }
 
+//Napisz program który wygeneruje losow¹ iloœæ liczb losowych i zapisze je do pliku tekstowego.
+//Napisz program, który odczyta liczby z wczeœniejszwgo pliku i znajdzie liczbê maksymaln¹.
+void task5()
+{
+    srand(time(NULL));
+    std::ofstream writeInFileNumbers;
+    writeInFileNumbers.open("c:\\liczby.txt", std::ios::app);
+    int randomNumerCount = rand() % 10 + 1;
+    if (writeInFileNumbers.is_open())
+    {
+        for (int i = 0; i < randomNumerCount; i++)
+        {
+            writeInFileNumbers << rand() % 1000 << "\n";
+        }
+        writeInFileNumbers.close();
+    }
+    else
+        std::cout << "B£¥D PLIKU!";
+}
+
+void task6()
+{
+    std::ifstream readFromFileNumbers;
+    readFromFileNumbers.open("c:\\liczby.txt");
+    if (readFromFileNumbers.is_open())
+    {
+        int max = 0;
+        int numberFromFile;
+        while (readFromFileNumbers >> numberFromFile)
+        {
+            if (numberFromFile > max)
+                max = numberFromFile;
+        }
+        readFromFileNumbers.close();
+
+        std::cout << "Najwiêksza liczba to: " << max;
+    }
+    else
+        std::cout << "B£¥D PLIKU!";
+}
+
 int main()
 {
     setlocale(LC_CTYPE, "polish");
-    task4();
+    task5();
 }
 
 /*
