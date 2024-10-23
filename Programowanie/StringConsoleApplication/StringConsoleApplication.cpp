@@ -2,6 +2,7 @@
 
 int main()
 {
+	setlocale(LC_CTYPE, "polish");
 	// stary kod, poniewa¿ nazwa klasy i metody jest z du¿ej litery
 	std::string text;
 	text = "Ala ma kota";
