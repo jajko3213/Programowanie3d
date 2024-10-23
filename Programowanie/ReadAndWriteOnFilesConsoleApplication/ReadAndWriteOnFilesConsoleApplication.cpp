@@ -122,10 +122,10 @@ void task5()
     srand(time(NULL));
     std::ofstream writeInFileNumbers;
     writeInFileNumbers.open("c:\\liczby.txt", std::ios::app);
-    int randomNumerCount = rand() % 10 + 1;
+    int randomNumberCount = rand() % 10 + 1;
     if (writeInFileNumbers.is_open())
     {
-        for (int i = 0; i < randomNumerCount; i++)
+        for (int i = 0; i < randomNumberCount; i++)
         {
             writeInFileNumbers << rand() % 1000 << "\n";
         }
