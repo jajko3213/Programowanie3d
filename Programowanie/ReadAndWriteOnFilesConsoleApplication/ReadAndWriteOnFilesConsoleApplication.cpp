@@ -131,7 +131,7 @@ void task5()
         }
         writeInFileNumbers.close();
     }
-    else
+    else  
         std::cout << "B£¥D PLIKU!";
 }
 
