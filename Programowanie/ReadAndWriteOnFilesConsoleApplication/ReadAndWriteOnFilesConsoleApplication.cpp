@@ -135,7 +135,7 @@ void task5()
         std::cout << "B£¥D PLIKU!";
 }
 
-//Napisz program, który odczyta liczby z wczeœniejszwgo pliku i znajdzie liczbê maksymaln¹.
+//Napisz program, który odczyta liczby z wczeœniejszwgo pliku i znajdzie liczbê maksymaln¹. 
 void task6()
 {
     std::ifstream readFromFileNumbers;
