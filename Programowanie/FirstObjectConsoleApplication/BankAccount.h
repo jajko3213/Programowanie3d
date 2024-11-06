@@ -11,6 +11,8 @@ private:
 
 public:
 	void SetBalance(double b);
+
+	double GetBalance();
 	 
 	void AccountInformation();
 	
