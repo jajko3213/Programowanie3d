@@ -26,5 +26,4 @@ int main()
 	//alias counter to to samo co int, ale mówi nam wiêcej ni¿ int
 	using counter = int;
 	counter sila = 2;
-
 }
