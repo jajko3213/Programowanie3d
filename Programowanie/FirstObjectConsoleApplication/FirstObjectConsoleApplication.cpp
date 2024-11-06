@@ -19,6 +19,7 @@ int main()
 	firstAccount.AccountInformation();
 
 	BankAccount secondAccount;
+	secondAccount.SetBalance(15000);
 	//secondAccount.balance = 15000;
 	//secondAccount.owner = "Ewa Kowalska";
 	//secondAccount.currency = "z³";
