@@ -10,6 +10,14 @@ private:
 	std::string currency; // waluta
 
 public:
+
+	BankAccount()
+	{
+		balance = 0;
+		owner = "Nieznany";
+		currency = "z³";
+	}
+
 	void SetBalance(double b);
 
 	double GetBalance();

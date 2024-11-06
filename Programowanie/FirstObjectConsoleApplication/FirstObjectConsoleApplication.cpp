@@ -39,6 +39,10 @@ int main()
 
 /*
 
+Konstruktor - to metoda z regu³y publicza jest wywo³ywana tylko raz podczas
+tworzenia obiektu automatycznie, potem siê nie da jej wywo³aæ, bez typu zwracanego bez nawet void, jej 
+nazwa jest taka sama jak obiektu
+
 Nazwê metody pisze siê z du¿ej litery jak i równie¿ klasy.
 Aby stworzyæ klasê piszemy:
 
