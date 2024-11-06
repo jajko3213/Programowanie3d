@@ -10,6 +10,10 @@ private:
 	std::string currency; // waluta
 
 public:
+	void SetCurrency(std::string c);
+
+	void SetBalance(double b);
+	 
 	void AccountInformation();
 	
 	void DepositToAccount(double amount);

@@ -1,6 +1,17 @@
 #include <iostream>
 #include "BankAccount.h"
 
+void BankAccount::SetCurrency(std::string c)
+{
+	c = "z³";
+}
+
+void BankAccount::SetBalance(double b)
+{
+	if (b >= 0)
+		balance = b;
+}
+
 void BankAccount::AccountInformation()
 {
 	std::cout << "Informacje o koncie bankowym.\n";
