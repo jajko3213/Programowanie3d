@@ -11,12 +11,9 @@ private:
 
 public:
 
-	BankAccount()
-	{
-		balance = 0;
-		owner = "Nieznany";
-		currency = "z³";
-	}
+	//konstruktory publiczne
+	BankAccount();
+	BankAccount(double b, std::string o, std::string c);
 
 	void SetBalance(double b);
 

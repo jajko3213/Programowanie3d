@@ -1,6 +1,20 @@
 #include <iostream>
 #include "BankAccount.h"
 
+BankAccount::BankAccount()
+{
+	balance = 0;
+	owner = "Nieznany";
+	currency = "z³";
+}
+
+BankAccount::BankAccount(double b, std::string o, std::string c)
+{
+	balance = b;
+	owner = o;
+	currency = c;
+}
+
 double BankAccount::GetBalance()
 {
 	return balance;
