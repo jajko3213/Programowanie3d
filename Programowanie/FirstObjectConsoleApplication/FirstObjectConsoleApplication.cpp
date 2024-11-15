@@ -4,7 +4,7 @@
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-	BankAccount firstAccount(10000, "Jan Kowalski", "z³");
+	BankAccount firstAccount(10000, "Jan Kowalski", "z³");//konstruktor z parametrami
 	//firstAccount.SetBalance(10000);
 	//firstAccount.balance = 10000;
 	//firstAccount.owner = "Jan Kowalski";
