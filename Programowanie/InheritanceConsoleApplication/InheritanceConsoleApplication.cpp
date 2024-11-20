@@ -1,6 +1,8 @@
 #include <iostream>
+#include "SavingBankAccount.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    SavingBankAccount savingBankAccount;
+    savingBankAccount.AccountInformation();
 }
