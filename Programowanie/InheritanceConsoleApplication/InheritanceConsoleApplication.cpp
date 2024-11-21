@@ -3,6 +3,7 @@
 
 int main()
 {
-    SavingBankAccount savingBankAccount;
+    setlocale(LC_CTYPE, "polish");
+    SavingBankAccount savingBankAccount(10000, "Ewa", "z³", 0.05);
     savingBankAccount.AccountInformation();
 }
