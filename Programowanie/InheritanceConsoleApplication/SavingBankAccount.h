@@ -12,8 +12,7 @@ public:
 		interestRate = 0.05;
 	}
 
-	SavingBankAccount(double b, std::string o, std::string c, double ir)
-		: BankAccount(b, o, c)
+	SavingBankAccount(double b, std::string o, std::string c, double ir) : BankAccount(b, o, c)
 	{
 		interestRate = ir;
 	}
