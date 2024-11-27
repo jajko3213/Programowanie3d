@@ -21,6 +21,8 @@ public:
 	{
 		balance = balance + balance * interestRate;
 	}
+
+	void AccountInformation();
 };
 
 /*
