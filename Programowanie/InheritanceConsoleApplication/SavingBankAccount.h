@@ -58,4 +58,6 @@ void AccountInformation()  klasa dziedziczna(metoda)
 	BankAccount::AccountInformation(); klasa bazowa (metoda) 
 	cout << "hi";
 }
+
+Mo¿na dziedziczyæ wiêcej ni¿ po klasie bazowej, mo¿na po przecinku dodaæ inn¹ klasê (raczej nie robiæ wielodziedziczenia)
 */
