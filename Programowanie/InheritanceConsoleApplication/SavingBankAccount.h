@@ -24,7 +24,7 @@ public:
 };
 
 /*
-Modyfikatory dostepu: 
+Modyfikatory dostepu:  
 public - cz³onek jejest dostêpny tylko w obrst dostêpny dla wszystkich (zarówno zewnêtrznych klas, jak i w obrêbie tej samej klasy).
 private - Cz³onek êbie tej klasy (nie jest dostêpny w klasach pochodnych ani spoza klasy).
 protected - Cz³onek jest dostêpny w obrêbie klasy, a tak¿e w klasach pochodnych 
