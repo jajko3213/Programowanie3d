@@ -8,7 +8,7 @@ Rectangle::Rectangle(double a, double b)
 
 void Rectangle::ShowInfo()
 {
-	std::cout << "Informacja o prostokšcie:\n";
+	std::cout << "Informacje o prostok¹cie:\n";
 	std::cout << "Bok A = " << sideA << "\n";
 	std::cout << "Bok B = " << sideB << "\n";
 	std::cout << "Obwód = " << GetPerimeter() << "\n";
