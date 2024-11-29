@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Figures.h"
+#include "Rectangle.h"
 
 //Napisz klasy które opisz¹ figury geometryczne: 
 // trapez, romb, równoleg³obok, prostok¹t i kwadrat.

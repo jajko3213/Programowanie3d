@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="FiguresDetails.cpp">
+    <ClCompile Include="Figures.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Figures.cpp">
+    <ClCompile Include="Rectangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Figures.h">
+    <ClInclude Include="Rectangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
