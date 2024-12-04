@@ -12,10 +12,10 @@
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-	Rectangle rectangle(5,6);
+	Rectangle rectangle(5,6,"prostok¹t");
 	rectangle.ShowInfo();
 
-	Square square(4);
+	Square square(4, "kwadrat");
 	square.ShowInfo();
 
 	Parallelogram parallelogram(6,4,3);

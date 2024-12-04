@@ -1,14 +1,15 @@
 #include "Rectangle.h"
 
-Rectangle::Rectangle(double a, double b)
+Rectangle::Rectangle(double a, double b, std::string n)
 {
 	sideA = a;
 	sideB = b;
+	name = n;
 }
 
 void Rectangle::ShowInfo()
 {
-	std::cout << "Informacje o prostok¹cie:\n";
+	std::cout << "Informacje o obiekice o nazwie: " << name << "\n";
 	std::cout << "Bok A = " << sideA << "\n";
 	std::cout << "Bok B = " << sideB << "\n";
 	std::cout << "Obwód = " << GetPerimeter() << "\n";

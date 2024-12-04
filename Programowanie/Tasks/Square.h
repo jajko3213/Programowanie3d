@@ -1,13 +1,10 @@
 #pragma once
 #include <iostream>
-class Square
+#include "Rectangle.h"
+
+class Square: public Rectangle
 {
-private:
-	double sideA;
 public:
-	Square(double a);
-	void ShowInfo();
-	double GetPerimeter();
-	double GetArea();
+	Square(double a, std::string n);
 };
 

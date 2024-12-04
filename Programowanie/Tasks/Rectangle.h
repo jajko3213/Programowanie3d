@@ -3,13 +3,12 @@
 
 class Rectangle
 {
-private:
-	double sideA, sideB;
 protected:
-
+	double sideA, sideB;
+	std::string name;
 public:
 
-	Rectangle(double a, double b);
+	Rectangle(double a, double b, std::string n);
 
 	void ShowInfo();
 	double GetPerimeter();
