@@ -7,7 +7,7 @@ Rectangle::Rectangle(double a, double b, std::string n)
 	name = n;
 }
 
-void Rectangle::ShowInfo()
+void Rectangle::ShowInfo() 
 {
 	std::cout << "Informacje o obiekice o nazwie: " << name << "\n";
 	std::cout << "Bok A = " << sideA << "\n";
