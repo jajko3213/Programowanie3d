@@ -1,12 +1,11 @@
 #pragma once
 #include <iostream>
-#include "Quadrangle.h"
+#include "Trapeze.h"
 
-class Parallelogram
+class Parallelogram : public Trapeze
 {
-protected:
-	
 public:
-	
+    Parallelogram(double a, double b, double c, double d, double h, std::string n);
+    double GetArea();
 };
 

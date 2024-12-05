@@ -18,7 +18,7 @@ int main()
 	Square square(4, "kwadrat");
 	square.ShowInfo();
 
-	Parallelogram parallelogram(5,4,5,4, "równoleg³obok");
+	Parallelogram parallelogram(5,4,5,4,5,"równoleg³obok");
 	parallelogram.ShowInfo();
 
 	/*Rhombus rhombus(8,6,6);
