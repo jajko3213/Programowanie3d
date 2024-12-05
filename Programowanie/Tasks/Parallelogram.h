@@ -1,8 +1,10 @@
 #pragma once
 #include <iostream>
+#include "Quadrangle.h"
+
 class Parallelogram
 {
-private:
+protected:
 	
 public:
 	

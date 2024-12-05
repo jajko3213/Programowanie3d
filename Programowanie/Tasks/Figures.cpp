@@ -18,11 +18,11 @@ int main()
 	Square square(4, "kwadrat");
 	square.ShowInfo();
 
-	Parallelogram parallelogram(6,4,3);
+	Parallelogram parallelogram(5,4,5,4, "równoleg³obok");
 	parallelogram.ShowInfo();
 
-	Rhombus rhombus(8,6,6);
-	rhombus.ShowInfo();
+	/*Rhombus rhombus(8,6,6);
+	rhombus.ShowInfo();*/
 
 	Trapeze trapeze(6, 5, 5, 4, 5 ,"trapez");
 	trapeze.ShowInfo();
