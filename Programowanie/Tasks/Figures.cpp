@@ -24,6 +24,6 @@ int main()
 	Rhombus rhombus(8,6,6);
 	rhombus.ShowInfo();
 
-	Trapeze trapeze(10, 6, 5, 5, 4);
+	Trapeze trapeze(6, 5, 5, 4, 5 ,"trapez");
 	trapeze.ShowInfo();
 }
