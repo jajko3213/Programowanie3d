@@ -21,8 +21,8 @@ int main()
 	Parallelogram parallelogram(5,4,5,4,5,"równoleg³obok");
 	parallelogram.ShowInfo();
 
-	/*Rhombus rhombus(8,6,6);
-	rhombus.ShowInfo();*/
+	Rhombus rhombus(8, 4, 4, 8, 5, "romb");
+	rhombus.ShowInfo();
 
 	Trapeze trapeze(6, 5, 5, 4, 5 ,"trapez");
 	trapeze.ShowInfo();
