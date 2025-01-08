@@ -1,5 +1,14 @@
 #include "Quadrangle.h"
 
+Quadrangle::Quadrangle(double a, double b, double c, double d, std::string n)
+{
+	sideA = a;
+	sideB = b;
+	sideC = c;
+	sideD = d;
+	name = n;
+}
+
 double Quadrangle::GetPerimeter()
 {
 	return sideA + sideB + sideC + sideD;
@@ -20,13 +29,4 @@ void Quadrangle::ShowInfo()
 	std::cout << "Bok D = " << sideD << "\n";
 	std::cout << "Obwód = " << GetPerimeter() << "\n";
 	std::cout << "Pole = " << GetArea() << "\n";
-}
-
-Quadrangle::Quadrangle(double a, double b, double c, double d, std::string n)
-{
-	sideA = a;
-	sideB = b;
-	sideC = c;
-	sideD = d;
-	name = n;
 }
