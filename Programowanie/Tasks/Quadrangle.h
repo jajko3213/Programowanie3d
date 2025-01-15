@@ -10,6 +10,6 @@ public:
 
 	Quadrangle(double a, double b, double c, double d, std::string n);
 	void ShowInfo();
-	double GetArea();
+	virtual double GetArea() = 0;
 	double GetPerimeter();
 };

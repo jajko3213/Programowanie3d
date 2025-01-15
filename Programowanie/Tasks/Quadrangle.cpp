@@ -17,7 +17,7 @@ double Quadrangle::GetPerimeter()
 
 double Quadrangle::GetArea()
 {
-	return -1;
+	return 0;
 }
 
 void Quadrangle::ShowInfo()
