@@ -8,4 +8,10 @@ int main()
     std::cout << "Adres firstVar: " << (&firstVar) << "\n";
     std::cout << "secondVar = " << secondVar << "\n";
     std::cout << "Adres secondVar: " << (&secondVar) << "\n";
+    int *ptr = &firstVar;
+    std::cout << "ptr = " << ptr << "\n";
+    std::cout << "*ptr = " << *ptr << "\n";
+    *ptr = 99;
+    std::cout << "firstVar = " << firstVar << "\n";
+
 }
