@@ -31,4 +31,44 @@ int main()
         std::cout << i << ": " << tab[i] << "\n";
         std::cout << i << ": " << *(tab + i) << "\n";
     }
+
+    ptr = new int;
+    *ptr = 55;
+
+    std::cout << "Adres na stercie: " << ptr << "\n";
+    std::cout << "Wartoœæ zmiennej ptr, która jest na stercie: " << *ptr << "\n";
+    delete ptr;
+    ptr = NULL;              
+
+    int count;
+    std::cout << "Podaj rozmiar tablicy:\n";
+    std::cin >> count;
+    int *t = new int[count];
+
+    /*
+    *t = 45;
+    *(t + 1) = 87;
+    t[3] = 99;
+
+    int* tt = new int[count * 2];
+    for (int i = 0; i < count; i++)
+    {
+        tt[i] = t[i];
+    }
+
+    delete[] t;
+    t = tt;
+    count = count * 2;
+    */
+   
+    /*
+    std::cout << "Wprowadzone wartoœci to:\n";
+    for (int i = 0; i < count; ++i) 
+    {
+        t[i] = i;
+        std::cout << "t[" << i << "] = " << t[i] << std::endl;
+    }
+
+    delete[] t;
+    */
 }
