@@ -45,7 +45,7 @@ int main()
 			break;
 		}
 
-		//zmiana aktualnego gracza na następnego
+		//zmiana aktualnego gracza na nastêpnege
 		currentPlayerNumber = (currentPlayerNumber + 1) % playersCount;
 	}
 }
