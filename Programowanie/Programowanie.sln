@@ -61,7 +61,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.TicTacToeObjectConsoleAp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TicTacToeObjectConsoleApplication", "TicTacToeObjectConsoleApplication\TicTacToeObjectConsoleApplication.vcxproj", "{ED5CB70D-4F89-4C23-99EA-1ABCAB89CACD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Zadania maturalne", "04.Zadania maturalne", "{2C242AC5-1024-40E2-86FE-A362569490AB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zadania maturalne", "Zadania maturalne", "{2C242AC5-1024-40E2-86FE-A362569490AB}"
 	ProjectSection(SolutionItems) = preProject
 		C:\Users\dawid\Desktop\Inf F2015 2022 maj cz2.pdf = C:\Users\dawid\Desktop\Inf F2015 2022 maj cz2.pdf
 		C:\Users\dawid\Desktop\Inf F2015 2022 maj załaczniki.zip = C:\Users\dawid\Desktop\Inf F2015 2022 maj załaczniki.zip
@@ -251,7 +251,6 @@ Global
 		{A4303619-4833-4868-8C7A-0C144FA00D0A} = {D1D5BBB3-BBDA-4B6D-9B18-12E45644500C}
 		{721E8B1A-A762-4980-BFBE-123A272FAD16} = {6A3A5C9F-DD69-434E-A36B-51E187577D99}
 		{ED5CB70D-4F89-4C23-99EA-1ABCAB89CACD} = {721E8B1A-A762-4980-BFBE-123A272FAD16}
-		{2C242AC5-1024-40E2-86FE-A362569490AB} = {6A3A5C9F-DD69-434E-A36B-51E187577D99}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34C36E17-B9A8-4CB1-99CD-669B47983D88}
