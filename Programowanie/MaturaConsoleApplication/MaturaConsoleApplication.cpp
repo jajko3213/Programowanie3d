@@ -18,7 +18,7 @@ int main()
 
 	int counter = 0;
 	int first = 0;
-	for (int number : numbers)
+	for (int number : numbers) //Tylko w obiektach foreach (nie mo¿na modyfikowaæ zawartoœci vectora podczas pêtli)
 	{
 		std::string str = std::to_string(number);
 		
