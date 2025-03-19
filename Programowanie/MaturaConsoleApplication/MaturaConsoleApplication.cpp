@@ -35,5 +35,5 @@ int main()
 		}
 	}
 
-	std::cout << counter << " " << first;
+	std::cout << counter << " " << first << "\n";
 }
