@@ -6,6 +6,7 @@
 
 int main()
 {
+	setlocale(LC_CTYPE, "Polish");
 	std::ifstream file("przyklad.txt");
 	std::vector<int> numbers;
 	int number;
