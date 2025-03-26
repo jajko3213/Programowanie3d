@@ -1,7 +1,6 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include <string>
 
 bool isPrime(int number)
 {
@@ -81,8 +80,31 @@ int main()
 	}
 
 	//Zadanie czwarte
-	for (int num : numbers)
-	{
-		
+	std::vector<int> uniqueNumbers;
+	std::vector<int> occurrences;
+
+	for (int i = 0; i < numbers.size(); i++) {
+		bool found = false;
+		for (int j = 0; j < uniqueNumbers.size(); j++) {
+			if (uniqueNumbers[j] == numbers[i]) {
+				occurrences[j]++; 
+				found = true;
+				break;
+			}
+		}
+		if (!found) {
+			uniqueNumbers.push_back(numbers[i]);
+			occurrences.push_back(1);
+		}
 	}
+
+	int uniqueCount = uniqueNumbers.size();
+	int countTwice = 0, countThrice = 0;
+
+	for (int i = 0; i < occurrences.size(); i++) {
+		if (occurrences[i] == 2) countTwice++;
+		if (occurrences[i] == 3) countThrice++;
+	}
+
+	std::cout << uniqueCount << " " << countTwice << " " << countThrice << "\n";
 }
