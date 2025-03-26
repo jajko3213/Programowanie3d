@@ -65,6 +65,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Matura", "Matura", "{2DF9C8
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MaturaConsoleApplication", "MaturaConsoleApplication\MaturaConsoleApplication.vcxproj", "{D698BDCD-17F4-495C-A33D-88F2083E22B2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Matura2022CzerwiecConsoleApplication", "Matura2022CzerwiecConsoleApplication\Matura2022CzerwiecConsoleApplication.vcxproj", "{1EF8E092-83AE-4C93-93B7-B13141675014}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -225,6 +227,14 @@ Global
 		{D698BDCD-17F4-495C-A33D-88F2083E22B2}.Release|x64.Build.0 = Release|x64
 		{D698BDCD-17F4-495C-A33D-88F2083E22B2}.Release|x86.ActiveCfg = Release|Win32
 		{D698BDCD-17F4-495C-A33D-88F2083E22B2}.Release|x86.Build.0 = Release|Win32
+		{1EF8E092-83AE-4C93-93B7-B13141675014}.Debug|x64.ActiveCfg = Debug|x64
+		{1EF8E092-83AE-4C93-93B7-B13141675014}.Debug|x64.Build.0 = Debug|x64
+		{1EF8E092-83AE-4C93-93B7-B13141675014}.Debug|x86.ActiveCfg = Debug|Win32
+		{1EF8E092-83AE-4C93-93B7-B13141675014}.Debug|x86.Build.0 = Debug|Win32
+		{1EF8E092-83AE-4C93-93B7-B13141675014}.Release|x64.ActiveCfg = Release|x64
+		{1EF8E092-83AE-4C93-93B7-B13141675014}.Release|x64.Build.0 = Release|x64
+		{1EF8E092-83AE-4C93-93B7-B13141675014}.Release|x86.ActiveCfg = Release|Win32
+		{1EF8E092-83AE-4C93-93B7-B13141675014}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -258,6 +268,7 @@ Global
 		{721E8B1A-A762-4980-BFBE-123A272FAD16} = {6A3A5C9F-DD69-434E-A36B-51E187577D99}
 		{ED5CB70D-4F89-4C23-99EA-1ABCAB89CACD} = {721E8B1A-A762-4980-BFBE-123A272FAD16}
 		{D698BDCD-17F4-495C-A33D-88F2083E22B2} = {2DF9C87D-FFA6-4880-8B64-01E469FD58B6}
+		{1EF8E092-83AE-4C93-93B7-B13141675014} = {2DF9C87D-FFA6-4880-8B64-01E469FD58B6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34C36E17-B9A8-4CB1-99CD-669B47983D88}
