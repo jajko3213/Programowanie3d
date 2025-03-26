@@ -6,6 +6,7 @@
 
 int main()
 {
+	//Zadanie pierwsze
 	setlocale(LC_CTYPE, "Polish");
 	std::ifstream file("przyklad.txt");
 	std::vector<int> numbers;
@@ -36,4 +37,7 @@ int main()
 	}
 
 	std::cout << counter << " " << first << "\n";
+
+	//Zadanie drugie
+
 }
