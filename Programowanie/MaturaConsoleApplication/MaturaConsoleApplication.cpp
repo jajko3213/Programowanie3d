@@ -38,6 +38,6 @@ int main()
 
 	std::cout << counter << " " << first << "\n";
 
-	//Zadanie drugie
+	//Zadanie drugie  
 
 }
