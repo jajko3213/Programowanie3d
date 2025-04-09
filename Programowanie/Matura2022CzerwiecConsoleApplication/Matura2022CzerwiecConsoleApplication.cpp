@@ -31,7 +31,6 @@ int reversedNumber(int number)
 
 int main()
 {
-	//Zadanie pierwsze (na liczb)
 	setlocale(LC_CTYPE, "Polish");
 	std::ifstream file("przyklad.txt");
 	std::vector<int> numbers;
@@ -42,6 +41,7 @@ int main()
 		numbers.push_back(number);
 	}
 
+	//Zadanie pierwsze (na liczb)
 	for (int num : numbers)
 	{
 		if (reversedNumber(num) % 17 == 0)
