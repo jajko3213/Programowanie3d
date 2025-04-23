@@ -67,6 +67,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MaturaConsoleApplication", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Matura2022CzerwiecConsoleApplication", "Matura2022CzerwiecConsoleApplication\Matura2022CzerwiecConsoleApplication.vcxproj", "{1EF8E092-83AE-4C93-93B7-B13141675014}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MaturaMaj2024ConsoleApplication", "MaturaMaj2024ConsoleApplication\MaturaMaj2024ConsoleApplication.vcxproj", "{D48BAE72-0B71-44BE-8592-802263DFC6C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -235,6 +237,14 @@ Global
 		{1EF8E092-83AE-4C93-93B7-B13141675014}.Release|x64.Build.0 = Release|x64
 		{1EF8E092-83AE-4C93-93B7-B13141675014}.Release|x86.ActiveCfg = Release|Win32
 		{1EF8E092-83AE-4C93-93B7-B13141675014}.Release|x86.Build.0 = Release|Win32
+		{D48BAE72-0B71-44BE-8592-802263DFC6C9}.Debug|x64.ActiveCfg = Debug|x64
+		{D48BAE72-0B71-44BE-8592-802263DFC6C9}.Debug|x64.Build.0 = Debug|x64
+		{D48BAE72-0B71-44BE-8592-802263DFC6C9}.Debug|x86.ActiveCfg = Debug|Win32
+		{D48BAE72-0B71-44BE-8592-802263DFC6C9}.Debug|x86.Build.0 = Debug|Win32
+		{D48BAE72-0B71-44BE-8592-802263DFC6C9}.Release|x64.ActiveCfg = Release|x64
+		{D48BAE72-0B71-44BE-8592-802263DFC6C9}.Release|x64.Build.0 = Release|x64
+		{D48BAE72-0B71-44BE-8592-802263DFC6C9}.Release|x86.ActiveCfg = Release|Win32
+		{D48BAE72-0B71-44BE-8592-802263DFC6C9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -269,6 +279,7 @@ Global
 		{ED5CB70D-4F89-4C23-99EA-1ABCAB89CACD} = {721E8B1A-A762-4980-BFBE-123A272FAD16}
 		{D698BDCD-17F4-495C-A33D-88F2083E22B2} = {2DF9C87D-FFA6-4880-8B64-01E469FD58B6}
 		{1EF8E092-83AE-4C93-93B7-B13141675014} = {2DF9C87D-FFA6-4880-8B64-01E469FD58B6}
+		{D48BAE72-0B71-44BE-8592-802263DFC6C9} = {2DF9C87D-FFA6-4880-8B64-01E469FD58B6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34C36E17-B9A8-4CB1-99CD-669B47983D88}
