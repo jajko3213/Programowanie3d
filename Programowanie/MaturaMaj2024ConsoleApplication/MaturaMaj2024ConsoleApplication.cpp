@@ -44,6 +44,14 @@ int main()
 		numbers.push_back(number);
 	}
 
+    //Zadanie 1
+    int n;
+    int m;
+    if (n > 0)
+    {
+        m = numberShort(n);
+    }
+
     //Zadanie 2
     int counter = 0;
     int highest = 0;
