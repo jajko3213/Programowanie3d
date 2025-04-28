@@ -2,23 +2,27 @@
 #include <vector>
 #include <fstream>
 
+//Zadanie 1
 int numberShort(int number)
 {
-    int numShort = 0;
-    int multiplier = 1;
-
-    while (number > 0)
+    if (number > 0)
     {
-        int digit = number % 10;
-        if (digit % 2 == 1) 
-        {
-            numShort = digit * multiplier + numShort;
-            multiplier *= 10;
-        }
-        number /= 10;
-    }
+        int numShort = 0;
+        int multiplier = 1;
 
-    return numShort;
+        while (number > 0)
+        {
+            int digit = number % 10;
+            if (digit % 2 == 1)
+            {
+                numShort = digit * multiplier + numShort;
+                multiplier *= 10;
+            }
+            number /= 10;
+        }
+
+        return numShort;
+    }
 }
 
 int greatestCommonDivisor(int a, int b)
@@ -43,28 +47,6 @@ int main()
 	{
 		numbers.push_back(number);
 	}
-
-    //Zadanie 1
-    /*
-    int n = 0;
-
-    if (n > 0)
-    {
-        int m = 0;
-        int multiplier = 1;
-
-        while (n > 0)
-        {
-            int digit = n % 10;
-            if (digit % 2 == 1) 
-            {
-                m = digit * multiplier + m;
-                multiplier *= 10;
-            }
-            n /= 10;
-        }
-    }
-    */
 
     //Zadanie 2
     int counter = 0;
