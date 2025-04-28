@@ -35,7 +35,7 @@ int greatestCommonDivisor(int a, int b)
 int main()
 {
 	setlocale(LC_CTYPE, "Polish");
-	std::ifstream file("skrot2_przyklad.txt");
+	std::ifstream file("skrot_przyklad.txt");
 	std::vector<int> numbers;
 	int number;
 
@@ -45,12 +45,26 @@ int main()
 	}
 
     //Zadanie 1
-    int n;
-    int m;
+    /*
+    int n = 0;
+
     if (n > 0)
     {
-        m = numberShort(n);
+        int m = 0;
+        int multiplier = 1;
+
+        while (n > 0)
+        {
+            int digit = n % 10;
+            if (digit % 2 == 1) 
+            {
+                m = digit * multiplier + m;
+                multiplier *= 10;
+            }
+            n /= 10;
+        }
     }
+    */
 
     //Zadanie 2
     int counter = 0;
