@@ -39,7 +39,7 @@ int greatestCommonDivisor(int a, int b)
 int main()
 {
 	setlocale(LC_CTYPE, "Polish");
-	std::ifstream file("skrot_przyklad.txt");
+	std::ifstream file("skrot2_przyklad.txt");
 	std::vector<int> numbers;
 	int number;
 
