@@ -2,7 +2,7 @@
 #include <vector>
 #include <fstream>
 
-//Zadanie 1
+//Zadanie 1.
 int numberShort(int number)
 {
     if (number > 0)
