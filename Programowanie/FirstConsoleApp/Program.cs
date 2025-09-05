@@ -2,4 +2,4 @@
 Console.WriteLine("Hello, World!");
 string name = "Jan";
 string surname = "Kowalski";
-Console.WriteLine("Witaj " + name + " " + surname + " tutaj!");
+Console.WriteLine("Witaj " + name + " " + surname + " tutaj!"); 
