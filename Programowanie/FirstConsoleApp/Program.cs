@@ -7,4 +7,4 @@ Console.WriteLine("Witaj {0} {1} tutaj!", name, surname);
 Console.WriteLine($"Witaj {name} {surname} tutaj");
 //znak dolara powoduje to że możemy używać {} do wstawiania zmiennych
 Console.WriteLine(@"Prękość to km\h");
-//znak @ powoduje że nie trzeba używać podwójnych \\ do ścieżek lub innych rzeczy
+//znak @ powoduje że nie trzeba znaków specjalnych
