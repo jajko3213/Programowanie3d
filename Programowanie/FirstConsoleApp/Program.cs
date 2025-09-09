@@ -11,6 +11,6 @@ Console.WriteLine(@"Prękość to km\h");
 
 int firstNumber = 5;
 int secondNumber = firstNumber;
-secondNumber = 10;
+secondNumber = 6;
 Console.WriteLine($"Wartość firstNumber: {firstNumber}");
 Console.WriteLine($"Wartość secondNumber: {secondNumber}");
