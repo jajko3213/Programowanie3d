@@ -8,3 +8,9 @@ Console.WriteLine($"Witaj {name} {surname} tutaj");
 //znak $ powoduje to że możemy używać {} do wstawiania zmiennych
 Console.WriteLine(@"Prękość to km\h");
 //znak @ powoduje że nie trzeba używać znaków specjalnych
+
+int firstNumber = 5;
+int secondNumber = firstNumber;
+secondNumber = 10;
+Console.WriteLine($"Wartość firstNumber: {firstNumber}");
+Console.WriteLine($"Wartość secondNumber: {secondNumber}");
