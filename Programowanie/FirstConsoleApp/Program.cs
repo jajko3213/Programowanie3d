@@ -9,8 +9,33 @@ Console.WriteLine($"Witaj {name} {surname} tutaj");
 Console.WriteLine(@"Prękość to km\h");
 //znak @ powoduje że nie trzeba używać znaków specjalnych
 
+/*
+int firstNumber = 5;
+ref int secondNumber = ref firstNumber;
+secondNumber = 6;
+
+Aby w takim przypadku zmienić wartość firstNumber, trzeba użyć słowa kluczowego ref
+przy deklaracji secondNumber i przypisaniem wartości.
+*/
+
 int firstNumber = 5;
 int secondNumber = firstNumber;
 secondNumber = 6;
 Console.WriteLine($"Wartość firstNumber: {firstNumber}"); 
 Console.WriteLine($"Wartość secondNumber: {secondNumber}");
+/*
+Domyślnie w C# przekazywanie parametrów do metod odbywa się przez wartość.
+Można jednak wymusić przekazywanie przez referencję używając słowa kluczowego ref.
+*/
+
+void ParameterTest_v1(ref int number)
+{
+    Console.WriteLine($"Wartość number przed: {number}");
+    number++;
+    Console.WriteLine($"Wartość number po: {number}");
+}
+
+firstNumber = 99;
+Console.WriteLine($"Wartość firstNumber: {firstNumber}");
+ParameterTest_v1(ref firstNumber);
+Console.WriteLine($"Wartość firstNumber po parameter test: {firstNumber}");
