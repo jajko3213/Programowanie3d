@@ -64,4 +64,3 @@ if (int.TryParse(strNumber, out int result))
 } else {
     Console.WriteLine("Parsowanie się nie udało.");
 }
-
