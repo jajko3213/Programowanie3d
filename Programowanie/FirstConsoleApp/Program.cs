@@ -61,6 +61,8 @@ int number = int.Parse(strNumber);
 if (int.TryParse(strNumber, out int result))
 {
     Console.WriteLine($"Parsowanie się udało. Wartość: {result}");
-} else {
+}
+else
+{
     Console.WriteLine("Parsowanie się nie udało.");
 }
