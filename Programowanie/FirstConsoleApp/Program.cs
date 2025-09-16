@@ -57,4 +57,11 @@ ale nie musi być inicjalizowana przed przekazaniem do metody.
 
 string strNumber = "123";
 int number = int.Parse(strNumber);
-Console.WriteLine($"Wartość number: {number}");
+
+if (int.TryParse(strNumber, out int result))
+{
+    Console.WriteLine($"Parsowanie się udało. Wartość: {result}");
+} else {
+    Console.WriteLine("Parsowanie się nie udało.");
+}
+
