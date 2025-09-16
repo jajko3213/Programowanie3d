@@ -53,4 +53,8 @@ Console.WriteLine($"Wartość firstNumber po parameter test: {thirdNumber}");
 /*
 Out - podobnie jak ref - pozwala na przekazywanie przez referencję
 ale nie musi być inicjalizowana przed przekazaniem do metody.
- */
+*/
+
+string strNumber = "123";
+int number = int.Parse(strNumber);
+Console.WriteLine($"Wartość number: {number}");
