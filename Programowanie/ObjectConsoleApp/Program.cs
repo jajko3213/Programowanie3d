@@ -33,3 +33,14 @@ void ParameterTestStruct_v2(ref pointStruct point)
 
 ParameterTestStruct_v2(ref pointStruct);
 Console.WriteLine($"Punkt po wywołaniu ma: x = {pointStruct.x}, y = {pointStruct.y}");
+
+pointClass firstPointClass = new pointClass();
+firstPointClass.x = 5;
+firstPointClass.y = 10;
+
+Console.WriteLine($"FirstPointClass ma: x = {firstPointClass.x}, y = {firstPointClass.y}");
+pointClass secondPointClass = firstPointClass;
+secondPointClass.x = 20;
+
+Console.WriteLine($"FirstPointClass ma: x = {firstPointClass.x}, y = {firstPointClass.y}");
+Console.WriteLine($"SecondPointClass ma: x = {secondPointClass.x}, y = {secondPointClass.y}");
