@@ -39,3 +39,18 @@ firstNumber = 99;
 Console.WriteLine($"Wartość firstNumber: {firstNumber}");
 ParameterTest_v1(ref firstNumber);
 Console.WriteLine($"Wartość firstNumber po parameter test: {firstNumber}");
+
+void ParameterTest_v2(out int number)
+{
+    number = 20;
+    Console.WriteLine($"Wartość number po: {number}");
+}
+
+int thirdNumber;
+ParameterTest_v2(out thirdNumber);
+Console.WriteLine($"Wartość firstNumber po parameter test: {thirdNumber}");
+
+/*
+Out - podobnie jak ref - pozwala na przekazywanie przez referencję
+ale nie musi być inicjalizowana przed przekazaniem do metody.
+ */
