@@ -23,6 +23,7 @@
         public new void ShowInfo()
         {
             Console.WriteLine($"Point3D: x = {x}, y = {y}, z = {z}");
+            //Wywołuje metode ShowInfo z klasy bazowej base.ShowInfo();
         }
     }
 }
