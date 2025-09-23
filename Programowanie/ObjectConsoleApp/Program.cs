@@ -44,3 +44,13 @@ secondPointClass.x = 20;
 
 Console.WriteLine($"FirstPointClass ma: x = {firstPointClass.x}, y = {firstPointClass.y}");
 Console.WriteLine($"SecondPointClass ma: x = {secondPointClass.x}, y = {secondPointClass.y}");
+
+void ParatertTestClass_v1(pointClass pc)
+{
+    Console.WriteLine($"W ParatertTestClass_v1 punkt ma ({pc.x}, {pc.y}) ");
+    pc.x = 99;
+    Console.WriteLine($"W ParatertTestClass_v1 punkt ma ({pc.x}, {pc.y}) ");
+}
+
+ParatertTestClass_v1(firstPointClass);
+Console.WriteLine($"firstPointClass ({firstPointClass.x}, {firstPointClass.y}) ");
