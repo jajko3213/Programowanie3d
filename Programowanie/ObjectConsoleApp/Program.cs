@@ -53,4 +53,4 @@ void ParatertTestClass_v1(pointClass pc)
 }
 
 ParatertTestClass_v1(firstPointClass);
-Console.WriteLine($"firstPointClass ({firstPointClass.x}, {firstPointClass.y}) ");
+Console.WriteLine($"firstPointClass ({firstPointClass.x}, {firstPointClass.y}) "); 
