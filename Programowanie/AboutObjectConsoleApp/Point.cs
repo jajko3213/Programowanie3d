@@ -2,8 +2,9 @@
 {
     internal class Point
     {
-        private int x;
-        private int y;
+        protected int x;
+        protected int y;
+
         /*
         Krótsza wersja:
         private int Y { get; set; }
@@ -15,6 +16,7 @@
         działa jak metoda, piszemy z dużej litery
         */
 
+        /*
         public int X
         {
             set
@@ -27,14 +29,10 @@
                 return x;
             }
         }
+        */
 
-        public Point()
-        {
-            x = 0; 
-            y = 0;
-        }
-
-        public Point(int x, int y)
+        //Jeśli użytkownik nie poda wartości to domyślnie będą wynosić 0
+        public Point(int x = 0, int y = 0)
         {
             this.x = x;
             this.y = y;
@@ -59,10 +57,10 @@
         {
             return y;
         }
-
+        
         public void ShowInfo()
         {
-            Console.WriteLine($"{x}, {y}");
+            Console.WriteLine($"Point: x = {x}, y = {y}");
         }
     }
 }
