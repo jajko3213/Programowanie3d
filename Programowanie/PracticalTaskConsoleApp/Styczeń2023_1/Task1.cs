@@ -5,7 +5,7 @@
     opis funkcji: Oblicza największy wspólny dzielnik (NWD) dwóch liczb całkowitych metodą Euklidesa.
     parametry: brak – dane pobierane są z konsoli.
     zwracany typ i opis: void – nie zwraca wartości, funkcja wypisuje wynik w konsoli.
-    autor: 12345
+    autor: Dawid Strzelecki
     ***********************************************/
 
     internal class Task1
