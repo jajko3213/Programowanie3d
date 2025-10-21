@@ -11,7 +11,7 @@
     *PobierzTytul - metoda zwraca tytuł filmu jako string
     *PobierzLiczbeWypozycen - metoda zwraca liczbę wypożyczeń filmu jako int
     *DodajWypozyczenie - metoda nic nie zwraca (void), inkrementuje liczbę wypożyczeń filmu o 1
-    informacje: Klasa film reprezentuje film w systemie wypożyczalni filmów
+    informacje: Klasa reprezentuje film w systemie wypożyczalni filmów
     autor: Dawid Strzelecki
     *****************************************************/
 
