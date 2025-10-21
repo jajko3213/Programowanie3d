@@ -41,13 +41,13 @@ notatkaDruga.WyswietlNotatke();
 notatkaDruga.Diagnostyczna();
 
 Film film = new Film();
-Console.WriteLine("Początkowa liczba wypożyczeń: " + film.PobierzLiczbaWyporzyczen());
+Console.WriteLine("Początkowa liczba wypożyczeń: " + film.PobierzLiczbeWypozyczen());
 Console.WriteLine("Początkowy tytuł: " + film.PobierzTytul());
 film.UstawTytul("Piraci z karaibów 1");
 Console.WriteLine("Tytuł po ustawieniu: " + film.PobierzTytul());
-Console.WriteLine("Liczba wypożyczeń przed inkrementacją " + film.PobierzLiczbaWyporzyczen());
+Console.WriteLine("Liczba wypożyczeń przed inkrementacją " + film.PobierzLiczbeWypozyczen());
 film.DodajWypozyczenie();
-Console.WriteLine("Liczba wypożyczeń po inkrementacji " + film.PobierzLiczbaWyporzyczen());
+Console.WriteLine("Liczba wypożyczeń po inkrementacji " + film.PobierzLiczbeWypozyczen());
 
 
 

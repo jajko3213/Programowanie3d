@@ -4,7 +4,7 @@
     nazwa funkcji: Task
     opis funkcji: Oblicza największy wspólny dzielnik (NWD) dwóch liczb całkowitych dodatnich metodą Euklidesa.
     parametry: a - pierwsza liczba całkowita dodatnia (int), b - druga liczba całkowita dodatnia (int)
-    zwracany typ i opis: int - największy wspólny dzielnik (NWD) dwóch liczb całkowitych
+    zwracany typ i opis: int - największy wspólny dzielnik (NWD) dwóch liczb całkowitych dodatnich
     autor: Dawid Strzelecki
     ***********************************************/
 

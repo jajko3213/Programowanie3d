@@ -1,5 +1,20 @@
 ﻿namespace PracticalTaskConsoleApp.Czerwiec2023_6
 {
+    /******************************************************
+    nazwa klasy: Film
+    pola:
+    *tytul - pole chronione przechowujące tytuł filmu, pole jest typu string
+    *liczbaWypozyczen - pole chronione przechowujące liczbę wypożyczeń filmu, pole jest typu int
+    metody: 
+    *UstawTytul - metoda nic nie zwraca (void), ustawia tytuł filmu na wartość przekazaną jako parametr,
+    jeśli długość tytułu nie przekracza 20 znaków, w przeciwnym razie rzuca wyjątek ArgumentException
+    *PobierzTytul - metoda zwraca tytuł filmu jako string
+    *PobierzLiczbeWypozycen - metoda zwraca liczbę wypożyczeń filmu jako int
+    *DodajWypozyczenie - metoda nic nie zwraca (void), inkrementuje liczbę wypożyczeń filmu o 1
+    informacje: Klasa film reprezentuje film w systemie wypożyczalni filmów
+    autor: Dawid Strzelecki
+    *****************************************************/
+
     internal class Film
     {
         protected string tytul;
@@ -28,7 +43,7 @@
             return tytul;
         }
 
-        public int PobierzLiczbaWyporzyczen()
+        public int PobierzLiczbeWypozyczen()
         {
             return liczbaWypozyczen;
         }
