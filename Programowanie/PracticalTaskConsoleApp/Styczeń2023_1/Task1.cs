@@ -2,27 +2,23 @@
 {
     /**********************************************
     nazwa funkcji: Task
-    opis funkcji: Oblicza największy wspólny dzielnik (NWD) dwóch liczb całkowitych metodą Euklidesa.
-    parametry: brak – dane pobierane są z konsoli.
-    zwracany typ i opis: void – nie zwraca wartości, funkcja wypisuje wynik w konsoli.
+    opis funkcji: Oblicza największy wspólny dzielnik (NWD) dwóch liczb całkowitych dodatnich metodą Euklidesa.
+    parametry: a - pierwsza liczba całkowita dodatnia (int), b - druga liczba całkowita dodatnia (int)
+    zwracany typ i opis: int - największy wspólny dzielnik (NWD) dwóch liczb całkowitych
     autor: Dawid Strzelecki
     ***********************************************/
 
     internal class Task1
     {
         //Algorytm Euklidesa
-        public void Task()
+        public int Task(int a, int b)
         {
-            Console.WriteLine("Podaj pierwszą liczbę");
-            string strA = Console.ReadLine();
+            if (a <= 0 || b <= 0)
+            {
+                throw new ArgumentException("Liczby muszą być dodatnie.");
+            }
 
-            Console.WriteLine("Podaj drugą liczbę");
-            string strB = Console.ReadLine();
-
-            int a = int.Parse(strA);
-            int b = int.Parse(strB);
-
-            while(a != b)
+            while (a != b)
             {
                 if (a > b)
                 {
@@ -34,7 +30,7 @@
                 }
             }
 
-            Console.WriteLine("Największy wspólny dzielnik to: " + a);
+            return a;
         }
     }
 }

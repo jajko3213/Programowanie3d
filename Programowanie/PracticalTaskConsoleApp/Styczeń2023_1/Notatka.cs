@@ -16,7 +16,7 @@
         private static int licznikNotatek = 0;
         private int id;
         protected string tytul;
-        protected string tresc; 
+        protected string tresc;
 
         public Notatka(string tytul, string tresc)
         {

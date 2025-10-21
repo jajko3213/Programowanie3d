@@ -5,7 +5,8 @@
         protected string tytul;
         protected int liczbaWypozyczen;
 
-        public Film() {
+        public Film()
+        {
             tytul = "";
             liczbaWypozyczen = 0;
         }
@@ -22,13 +23,12 @@
             }
         }
 
-
         public string PobierzTytul()
         {
             return tytul;
         }
 
-        public int PobierzLiczbeWyporzyczen()
+        public int PobierzLiczbaWyporzyczen()
         {
             return liczbaWypozyczen;
         }
