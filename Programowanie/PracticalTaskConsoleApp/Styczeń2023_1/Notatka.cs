@@ -21,7 +21,7 @@
         public Notatka(string tytul, string tresc)
         {
             licznikNotatek++;
-            this.id = licznikNotatek;
+            id = licznikNotatek;
             this.tytul = tytul;
             this.tresc = tresc;
         }
