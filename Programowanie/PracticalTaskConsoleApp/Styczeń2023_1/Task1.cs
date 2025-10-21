@@ -14,27 +14,27 @@
         public void Task()
         {
             Console.WriteLine("Podaj pierwszą liczbę");
-            string strFirstNumber = Console.ReadLine();
+            string strA = Console.ReadLine();
 
             Console.WriteLine("Podaj drugą liczbę");
-            string strSecondNumber = Console.ReadLine();
+            string strB = Console.ReadLine();
 
-            int firstNumber = int.Parse(strFirstNumber);
-            int secondNumber = int.Parse(strSecondNumber);
+            int a = int.Parse(strA);
+            int b = int.Parse(strB);
 
-            while(firstNumber != secondNumber)
+            while(a != b)
             {
-                if (firstNumber > secondNumber)
+                if (a > b)
                 {
-                    firstNumber = firstNumber - secondNumber;
+                    a = a - b;
                 }
                 else
                 {
-                    secondNumber = secondNumber - firstNumber;
+                    b = b - a;
                 }
             }
 
-            Console.WriteLine("Największy wspólny dzielnik to: " + firstNumber);
+            Console.WriteLine("Największy wspólny dzielnik to: " + a);
         }
     }
 }
