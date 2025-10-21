@@ -8,6 +8,7 @@
     *id - pole prywatne przechowywujące unikalny identyfikator notatki, pole jest typu int
     *tytul - pole chronione przechowywujące tytuł notatki, pole jest typu string
     *tresc - pole chronione przechowywujące treść notatki, pole jest typu string
+    *licznikNotatek - pole statyczne prywatne przechowujące licznik utworzonych notatek, pole jest typu int
     autor: Dawid Strzelecki
     ***********************************************/
 
