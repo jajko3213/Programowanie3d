@@ -1,15 +1,15 @@
 ﻿namespace PracticalTaskConsoleApp.Styczeń2023_1
 {
-    /**********************************************
-    nazwa funkcji: AlgorytmEuklidesa
-    opis funkcji: Oblicza największy wspólny dzielnik (NWD) dwóch liczb całkowitych dodatnich metodą Euklidesa.
-    parametry: a - pierwsza liczba całkowita dodatnia (int), b - druga liczba całkowita dodatnia (int)
-    zwracany typ i opis: int - największy wspólny dzielnik (NWD) dwóch liczb całkowitych dodatnich
-    autor: Dawid Strzelecki
-    ***********************************************/
-
     internal class Task1
     {
+        /**********************************************
+        nazwa funkcji: AlgorytmEuklidesa
+        opis funkcji: Oblicza największy wspólny dzielnik (NWD) dwóch liczb całkowitych dodatnich metodą Euklidesa.
+        parametry: a - pierwsza liczba całkowita dodatnia (int), b - druga liczba całkowita dodatnia (int)
+        zwracany typ i opis: int - największy wspólny dzielnik (NWD) dwóch liczb całkowitych dodatnich
+        autor: Dawid Strzelecki
+        ***********************************************/
+
         public int AlgorytmEuklidesa(int a, int b)
         {
             if (a <= 0 || b <= 0)
@@ -57,4 +57,3 @@
         }
     }
 }
-
